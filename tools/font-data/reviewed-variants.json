@@ -1,0 +1,640 @@
+{
+  "乡": {
+    "target": "郷",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "乡",
+        "to": "鄉"
+      },
+      {
+        "kind": "Unihan.kZVariant",
+        "from": "鄉",
+        "to": "郷"
+      }
+    ],
+    "reason": "Unicode 标注同一抽象字形的重复编码关系；乡先经唯一繁体鄉"
+  },
+  "产": {
+    "target": "産",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "产",
+        "to": "産"
+      }
+    ],
+    "reason": "唯一简繁转换目标的地区字形差异，Unicode 明确列出目标字形；不选择不同词义"
+  },
+  "俞": {
+    "target": "兪",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "俞",
+        "to": "兪"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "俱": {
+    "target": "倶",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "俱",
+        "to": "倶"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "值": {
+    "target": "値",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "值",
+        "to": "値"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "偷": {
+    "target": "偸",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "偷",
+        "to": "偸"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "勖": {
+    "target": "勗",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "勖",
+        "to": "勗"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "吞": {
+    "target": "呑",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "吞",
+        "to": "呑"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "吴": {
+    "target": "呉",
+    "path": [
+      {
+        "kind": "Unihan.kZVariant",
+        "from": "吴",
+        "to": "呉"
+      }
+    ],
+    "reason": "Unicode 标注同一抽象字形的重复编码关系；乡先经唯一繁体鄉"
+  },
+  "堇": {
+    "target": "菫",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "堇",
+        "to": "菫"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "妒": {
+    "target": "妬",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "妒",
+        "to": "妬"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "姊": {
+    "target": "姉",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "姊",
+        "to": "姉"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "娱": {
+    "target": "娯",
+    "path": [
+      {
+        "kind": "Unihan.kZVariant",
+        "from": "娱",
+        "to": "娯"
+      }
+    ],
+    "reason": "Unicode 标注同一抽象字形的重复编码关系；乡先经唯一繁体鄉"
+  },
+  "巢": {
+    "target": "巣",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "巢",
+        "to": "巣"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "帮": {
+    "target": "幇",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "帮",
+        "to": "幇"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "徵": {
+    "target": "徴",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "徵",
+        "to": "徴"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "恿": {
+    "target": "慂",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "恿",
+        "to": "慂"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "户": {
+    "target": "戸",
+    "path": [
+      {
+        "kind": "Unihan.kZVariant",
+        "from": "户",
+        "to": "戸"
+      }
+    ],
+    "reason": "Unicode 标注同一抽象字形的重复编码关系；乡先经唯一繁体鄉"
+  },
+  "戾": {
+    "target": "戻",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "戾",
+        "to": "戻"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "揭": {
+    "target": "掲",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "揭",
+        "to": "掲"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "晚": {
+    "target": "晩",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "晚",
+        "to": "晩"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "暨": {
+    "target": "曁",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "暨",
+        "to": "曁"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "朵": {
+    "target": "朶",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "朵",
+        "to": "朶"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "查": {
+    "target": "査",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "查",
+        "to": "査"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "棂": {
+    "target": "櫺",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "棂",
+        "to": "欞"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "欞",
+        "to": "櫺"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "榆": {
+    "target": "楡",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "榆",
+        "to": "楡"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "步": {
+    "target": "歩",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "步",
+        "to": "歩"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "每": {
+    "target": "毎",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "每",
+        "to": "毎"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "毗": {
+    "target": "毘",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "毗",
+        "to": "毘"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "污": {
+    "target": "汚",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "污",
+        "to": "汚"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "沉": {
+    "target": "沈",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "沉",
+        "to": "沈"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "涉": {
+    "target": "渉",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "涉",
+        "to": "渉"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "渴": {
+    "target": "渇",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "渴",
+        "to": "渇"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "痹": {
+    "target": "痺",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "痹",
+        "to": "痺"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "篡": {
+    "target": "簒",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "篡",
+        "to": "簒"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "绝": {
+    "target": "絶",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "绝",
+        "to": "絶"
+      }
+    ],
+    "reason": "唯一简繁转换目标的地区字形差异，Unicode 明确列出目标字形；不选择不同词义"
+  },
+  "胭": {
+    "target": "臙",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "胭",
+        "to": "臙"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "荔": {
+    "target": "茘",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "荔",
+        "to": "茘"
+      }
+    ],
+    "reason": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
+  },
+  "裤": {
+    "target": "袴",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "裤",
+        "to": "褲"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "褲",
+        "to": "袴"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "账": {
+    "target": "帳",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "账",
+        "to": "賬"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "賬",
+        "to": "帳"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "躲": {
+    "target": "躱",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "躲",
+        "to": "躱"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "郄": {
+    "target": "郤",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "郄",
+        "to": "郤"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "锈": {
+    "target": "銹",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "锈",
+        "to": "鏽"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "鏽",
+        "to": "銹"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "锐": {
+    "target": "鋭",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "锐",
+        "to": "鋭"
+      }
+    ],
+    "reason": "唯一简繁转换目标的地区字形差异，Unicode 明确列出目标字形；不选择不同词义"
+  },
+  "阱": {
+    "target": "穽",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "阱",
+        "to": "穽"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  },
+  "韧": {
+    "target": "靭",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "韧",
+        "to": "韌"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "韌",
+        "to": "靭"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "颓": {
+    "target": "頽",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "颓",
+        "to": "頽"
+      }
+    ],
+    "reason": "唯一简繁转换目标的地区字形差异，Unicode 明确列出目标字形；不选择不同词义"
+  },
+  "飚": {
+    "target": "飆",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "飚",
+        "to": "飈"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "飈",
+        "to": "飆"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "骘": {
+    "target": "隲",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "骘",
+        "to": "騭"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "騭",
+        "to": "隲"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "鳄": {
+    "target": "鰐",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "鳄",
+        "to": "鱷"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "鱷",
+        "to": "鰐"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "鳖": {
+    "target": "鼈",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "鳖",
+        "to": "鱉"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "鱉",
+        "to": "鼈"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "鸡": {
+    "target": "鷄",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "鸡",
+        "to": "雞"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "雞",
+        "to": "鷄"
+      }
+    ],
+    "reason": "先经过唯一繁体目标，再审核为异体书写：幫/幇帮助、欞/櫺窗棂、褲/袴裤、賬/帳账目、韌/靭坚韧、鱷/鰐鳄鱼、鱉/鼈鳖、騭/隲同字、飈/飆暴风、雞/鷄鸡、鏽/銹铁锈"
+  },
+  "麇": {
+    "target": "麕",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "麇",
+        "to": "麕"
+      }
+    ],
+    "reason": "逐字审核为异体书写：俞/兪同字、偷/偸同字、勖/勗勉励、吞/呑同字、妒/妬同字、朵/朶同字、毗/毘同字、沉/沈的沉没义、篡/簒同字、胭/臙同字、躲/躱同字、郄/郤姓氏异体、阱/穽陷阱、麇/麕獐、堇/菫植物、恿/慂怂恿"
+  }
+}

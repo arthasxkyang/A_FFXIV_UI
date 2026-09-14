@@ -62,12 +62,63 @@ class FontTests(unittest.TestCase):
 
     def test_coverage_partition_and_report(self):
         result = self.result
-        expected = {'total': 6763, 'original_covered': 3385, 'added': 1402,
-                    'covered_after': 4787, 'ambiguous': 86, 'no_reusable_glyph': 1890}
+        expected = {'total': 6763, 'original_covered': 3385, 'added': 1455,
+                    'covered_after': 4840, 'ambiguous': 86, 'unresolved_no_approved_mapping': 1837}
         self.assertEqual(result['counts'], expected)
         self.assertEqual(json.loads(builder.REPORT.read_text()), result)
         scope = builder.gb2312_hanzi()
-        self.assertEqual(sum(ord(c) in self.font.getBestCmap() for c in scope), 4787)
+        self.assertEqual(sum(ord(c) in self.font.getBestCmap() for c in scope), 4840)
+
+    def test_previous_aliases_preserved_and_new_reviews_applied(self):
+        old, _, _ = builder.plan(
+            self.source.getBestCmap(), builder.dictionary(builder.DATA / 'STCharacters.txt'),
+            builder.dictionary(builder.DATA / 'JPShinjitaiCharacters.txt'),
+            json.loads((builder.DATA / 'reviewed-japanese.json').read_text()))
+        self.assertEqual(len(old), 1402)
+        current = {row['character']: row for row in self.result['aliases']}
+        for row in old:
+            self.assertEqual(current[row['character']]['glyph'], row['glyph'])
+        self.assertEqual(sum('evidence' in row for row in current.values()), 53)
+        for pair in '步歩 每毎 涉渉 吞呑 产産 户戸 绝絶 乡郷 鸡鷄'.split():
+            self.assertEqual(current[pair[0]]['target'], pair[1])
+        for char in '发术别你她':
+            self.assertNotIn(ord(char), self.font.getBestCmap())
+
+    def test_review_cannot_bypass_ambiguity_or_invent_evidence(self):
+        import copy
+        args = (self.source.getBestCmap(),
+                builder.dictionary(builder.DATA / 'STCharacters.txt'),
+                builder.dictionary(builder.DATA / 'JPShinjitaiCharacters.txt'),
+                json.loads((builder.DATA / 'reviewed-japanese.json').read_text()))
+        variants = json.loads((builder.DATA / 'reviewed-variants.json').read_text())
+        unicode = builder.unihan()
+        for char, row in (
+            ('发', {'target': '發', 'path': [], 'reason': '不得用审核白名单绕过语义歧义'}),
+            ('步', {'target': '人', 'path': [], 'reason': '伪造关系应失败'}),
+            ('你', {'target': '祢', 'path': [{'kind': 'Unihan.kSpecializedSemanticVariant',
+                                         'from': '你', 'to': '祢'}],
+                   'reason': '局部词义或古籍通假不能用来显示现代代词'}),
+            ('中', {'target': '人', 'path': [], 'reason': '已有字形不覆盖'}),
+        ):
+            with self.subTest(character=char):
+                bad = copy.deepcopy(variants)
+                bad[char] = row
+                with self.assertRaises(ValueError):
+                    builder.plan(*args, bad, unicode)
+
+    def test_audit_and_missing_list(self):
+        audit = self.result['audit']
+        self.assertEqual(audit['remaining_with_candidates'], 178)
+        self.assertEqual(audit['remaining_without_candidates_in_audited_sources'], 1745)
+        self.assertEqual(audit['adobe_exact_remaining'], 0)
+        self.assertEqual(builder.adobe_map()[ord('一')],
+                         self.source.getBestCmap()[ord('一')])
+        lines = (self.report.parent / 'axis-missing-30.txt').read_text().splitlines()
+        self.assertTrue(all(len(line) == 30 for line in lines[:-1]))
+        self.assertEqual(len(lines[-1]), 3)
+        self.assertEqual(len(set(''.join(lines))), 1923)
+        self.assertEqual(''.join(lines), ''.join(sorted(
+            r['character'] for r in self.result['ambiguous'] + self.result['unavailable'])))
 
     def test_reproducible(self):
         output = self.output.with_name('second.ttf')
