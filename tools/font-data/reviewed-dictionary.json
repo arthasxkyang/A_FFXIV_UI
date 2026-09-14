@@ -1,0 +1,288 @@
+{
+  "倘": {
+    "target": "儻",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "倘",
+        "to": "儻"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "儻词条明确同倘；按字典同字关系采用。",
+    "sources": [
+      "https://stroke-order.learningweb.moe.edu.tw/dictMean.jsp?ID=20795&la=0"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "勋": {
+    "target": "勳",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters.candidate",
+        "from": "勋",
+        "to": "勳"
+      }
+    ],
+    "traditional_candidates": [
+      "勳",
+      "勛"
+    ],
+    "reason": "官方规范字对照列勳与勛；两候选为功勋同字写法。",
+    "sources": [
+      "https://language.moe.gov.tw/001/Upload/files/SITE_CONTENT/M0001/CDBOOK/charpt2-23.html"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "哗": {
+    "target": "嘩",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "哗",
+        "to": "嘩"
+      }
+    ],
+    "traditional_candidates": [
+      "譁",
+      "嘩"
+    ],
+    "reason": "嘩、譁为喧哗异体；选择口旁嘩以保留口部写法。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=42216&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "啮": {
+    "target": "嚙",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "啮",
+        "to": "嚙"
+      }
+    ],
+    "traditional_candidates": [
+      "齧",
+      "嚙"
+    ],
+    "reason": "教育部异体字资料将嚙归入齧；两个繁体候选属于咬啮同字写法。",
+    "sources": [
+      "https://pedia.cloud.edu.tw/Entry/Detail?title=%E5%9A%99"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "姬": {
+    "target": "姫",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "姬",
+        "to": "姫"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "词条明确将姫列为姬的异体；采用其姬字用法，不把姫的其他读音当作输入含义。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=9979&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "娴": {
+    "target": "嫻",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "娴",
+        "to": "嫻"
+      }
+    ],
+    "traditional_candidates": [
+      "嫺",
+      "嫻"
+    ],
+    "reason": "嫺与嫻为异体关系；OpenCC 两候选为同字写法，选择已有嫻。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=10240&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "沲": {
+    "target": "沱",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "沲",
+        "to": "沱"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "研订将沲认定为沱的异体。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-23487&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "绔": {
+    "target": "袴",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "绔",
+        "to": "絝"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "絝",
+        "to": "袴"
+      }
+    ],
+    "traditional_candidates": [
+      "絝"
+    ],
+    "reason": "唯一繁体絝经研订归入袴、褲的裤子异体系统。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-40844"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "绷": {
+    "target": "繃",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "绷",
+        "to": "繃"
+      }
+    ],
+    "traditional_candidates": [
+      "繃",
+      "綳"
+    ],
+    "reason": "研订将綳归为繃的异体，列出的多读音未形成需要选词的两种字。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-33799&la=0&powerMode=2"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "舡": {
+    "target": "船",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "舡",
+        "to": "船"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "舡词条释义为船；复用同义船字形。",
+    "sources": [
+      "https://dict.revised.moe.edu.tw/dictView.jsp?ID=7202&la=1&powerMode=0"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "艳": {
+    "target": "艷",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "艳",
+        "to": "艷"
+      }
+    ],
+    "traditional_candidates": [
+      "豔",
+      "艷"
+    ],
+    "reason": "豔词条同时收艳、艷为异体，属于形体差异。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=42590&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "葚": {
+    "target": "椹",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "葚",
+        "to": "椹"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "桑葚的葚明确亦作椹；两读音均指桑实。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=68741"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "赝": {
+    "target": "贋",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "赝",
+        "to": "贋"
+      }
+    ],
+    "traditional_candidates": [
+      "贗",
+      "贋"
+    ],
+    "reason": "贋明确为贗的异体；两候选同指伪造。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=43454&la=0"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "蹋": {
+    "target": "踏",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "蹋",
+        "to": "踏"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "比较正文说明蹋同踏，糟蹋亦作糟踏；采用该异体关系。",
+    "sources": [
+      "https://chardb.iis.sinica.edu.tw/meancompare/8E0F/8E4B"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "镰": {
+    "target": "鎌",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters.candidate",
+        "from": "镰",
+        "to": "鎌"
+      }
+    ],
+    "traditional_candidates": [
+      "鐮",
+      "鎌"
+    ],
+    "reason": "鐮的镰刀用法可写鎌；目标另有古义不改变输入镰的含义。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=74072&la=0"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  }
+}

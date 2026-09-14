@@ -62,12 +62,12 @@ class FontTests(unittest.TestCase):
 
     def test_coverage_partition_and_report(self):
         result = self.result
-        expected = {'total': 6763, 'original_covered': 3385, 'added': 1455,
-                    'covered_after': 4840, 'ambiguous': 86, 'unresolved_no_approved_mapping': 1837}
+        expected = {'total': 6763, 'original_covered': 3385, 'added': 1470,
+                    'covered_after': 4855, 'ambiguous': 78, 'unresolved_no_approved_mapping': 1830}
         self.assertEqual(result['counts'], expected)
         self.assertEqual(json.loads(builder.REPORT.read_text()), result)
         scope = builder.gb2312_hanzi()
-        self.assertEqual(sum(ord(c) in self.font.getBestCmap() for c in scope), 4840)
+        self.assertEqual(sum(ord(c) in self.font.getBestCmap() for c in scope), 4855)
 
     def test_previous_aliases_preserved_and_new_reviews_applied(self):
         old, _, _ = builder.plan(
@@ -108,17 +108,49 @@ class FontTests(unittest.TestCase):
 
     def test_audit_and_missing_list(self):
         audit = self.result['audit']
-        self.assertEqual(audit['remaining_with_candidates'], 178)
-        self.assertEqual(audit['remaining_without_candidates_in_audited_sources'], 1745)
+        self.assertEqual(audit['remaining_with_candidates'], 166)
+        self.assertEqual(audit['remaining_without_candidates_in_audited_sources'], 1742)
         self.assertEqual(audit['adobe_exact_remaining'], 0)
         self.assertEqual(builder.adobe_map()[ord('一')],
                          self.source.getBestCmap()[ord('一')])
         lines = (self.report.parent / 'axis-missing-30.txt').read_text().splitlines()
         self.assertTrue(all(len(line) == 30 for line in lines[:-1]))
-        self.assertEqual(len(lines[-1]), 3)
-        self.assertEqual(len(set(''.join(lines))), 1923)
+        self.assertEqual(len(lines[-1]), 18)
+        self.assertEqual(len(set(''.join(lines))), 1908)
         self.assertEqual(''.join(lines), ''.join(sorted(
             r['character'] for r in self.result['ambiguous'] + self.result['unavailable'])))
+
+    def test_full_audit_exhaustive_and_only_approved_applied(self):
+        audit = json.loads((self.report.parent / 'axis-full-audit.json').read_text())
+        self.assertEqual(audit['counts'], {'total': 1923, 'with_candidates': 181,
+            'approved': 15, 'insufficient': 139, 'no_candidate': 1742, 'rejected': 27})
+        self.assertEqual(len({r['character'] for r in audit['characters']}), 1923)
+        cmap = self.source.getBestCmap()
+        args = (cmap, builder.dictionary(builder.DATA / 'STCharacters.txt'),
+                builder.dictionary(builder.DATA / 'JPShinjitaiCharacters.txt'),
+                json.loads((builder.DATA / 'reviewed-japanese.json').read_text()),
+                json.loads((builder.DATA / 'reviewed-variants.json').read_text()), builder.unihan())
+        old, ambiguous, unavailable = builder.plan(*args)
+        self.assertEqual({r['character'] for r in audit['characters']},
+                         {r['character'] for r in ambiguous + unavailable})
+        current = {r['character']: r for r in self.result['aliases']}
+        for row in old:
+            self.assertEqual(current[row['character']], row)
+        for row in audit['characters']:
+            self.assertEqual(ord(row['character']) in self.font.getBestCmap(),
+                             row['decision'] == 'approved')
+        reviews = json.loads((builder.DATA / 'reviewed-dictionary.json').read_text())
+        self.assertEqual(len(reviews), 15)
+        import copy
+        for change in ('target', 'traditional_candidates', 'sources', 'decision'):
+            bad = copy.deepcopy(reviews)
+            bad['勋'][change] = {'target': '人', 'traditional_candidates': ['勳'],
+                                'sources': [], 'decision': 'insufficient'}[change]
+            with self.assertRaises(ValueError):
+                builder.plan(*args, dictionary_reviews=bad)
+        for name in ('axis-full-audit.json', 'axis-full-audit.md'):
+            self.assertEqual((self.report.parent / name).read_bytes(),
+                             (builder.REPORT.parent / name).read_bytes())
 
     def test_reproducible(self):
         output = self.output.with_name('second.ttf')

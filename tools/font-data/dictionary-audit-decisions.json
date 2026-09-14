@@ -1,0 +1,1124 @@
+{
+  "丰": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 豐／丰；现存可达字形 豊、豐。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "亻": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "仑": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 侖／崙；现存可达字形 侖、崘、崙。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "仳": {
+    "decision": "insufficient",
+    "reason": "到 丕 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "份": {
+    "decision": "insufficient",
+    "reason": "到 分 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "仿": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 仿／彷；现存可达字形 倣、彷、髣。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "伙": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 夥／伙；现存可达字形 夥。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "你": {
+    "decision": "rejected",
+    "reason": "人称代词不能用祢、袮等古籍局部通假覆盖。",
+    "sources": []
+  },
+  "佣": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 傭／佣；现存可达字形 傭。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "佬": {
+    "decision": "insufficient",
+    "reason": "到 姆 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "倘": {
+    "target": "儻",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "倘",
+        "to": "儻"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "儻词条明确同倘；按字典同字关系采用。",
+    "sources": [
+      "https://stroke-order.learningweb.moe.edu.tw/dictMean.jsp?ID=20795&la=0"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "偎": {
+    "decision": "insufficient",
+    "reason": "到 隈 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "儆": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 警；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "刂": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "划": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 劃／划；现存可达字形 劃。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "刨": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 鉋；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "别": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 別／彆；现存可达字形 別。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "勋": {
+    "target": "勳",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters.candidate",
+        "from": "勋",
+        "to": "勳"
+      }
+    ],
+    "traditional_candidates": [
+      "勳",
+      "勛"
+    ],
+    "reason": "官方规范字对照列勳与勛；两候选为功勋同字写法。",
+    "sources": [
+      "https://language.moe.gov.tw/001/Upload/files/SITE_CONTENT/M0001/CDBOOK/charpt2-23.html"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "勰": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 協、恊、脅；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "卤": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 滷／鹵；现存可达字形 滷、鹵。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "历": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 歷／曆；现存可达字形 厲、暦、歴。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "叁": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 三；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "发": {
+    "decision": "rejected",
+    "reason": "發与髮分别涉及发出和头发，cmap 无上下文选字能力。",
+    "sources": []
+  },
+  "叹": {
+    "decision": "insufficient",
+    "reason": "嘆、歎在叹息与吟咏赞叹上有用法区分，尚不足以固定选字。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=6844&powerMode=2"
+    ]
+  },
+  "吒": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 咤；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "吲": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 哂；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "呃": {
+    "decision": "insufficient",
+    "reason": "到 阨 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "哗": {
+    "target": "嘩",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "哗",
+        "to": "嘩"
+      }
+    ],
+    "traditional_candidates": [
+      "譁",
+      "嘩"
+    ],
+    "reason": "嘩、譁为喧哗异体；选择口旁嘩以保留口部写法。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=42216&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "哼": {
+    "decision": "insufficient",
+    "reason": "到 苛 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "唉": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 欸；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "啃": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 齦；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "啊": {
+    "decision": "insufficient",
+    "reason": "到 阿 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "啮": {
+    "target": "嚙",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "啮",
+        "to": "嚙"
+      }
+    ],
+    "traditional_candidates": [
+      "齧",
+      "嚙"
+    ],
+    "reason": "教育部异体字资料将嚙归入齧；两个繁体候选属于咬啮同字写法。",
+    "sources": [
+      "https://pedia.cloud.edu.tw/Entry/Detail?title=%E5%9A%99"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "喂": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 喂／餵；现存可达字形 餧。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "嘻": {
+    "decision": "insufficient",
+    "reason": "到 咥 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "嘿": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 默；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "囟": {
+    "decision": "insufficient",
+    "reason": "到 倖、幸 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "团": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 團／糰；现存可达字形 団、團。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "圩": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 墟；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "坛": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 壇／罈；现存可达字形 壇、壜、罎。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "坭": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 泥；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "坯": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 坯／坏；现存可达字形 坏、壞。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "埽": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 掃；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "复": {
+    "decision": "rejected",
+    "reason": "復、複、覆并非所有语境通用。",
+    "sources": []
+  },
+  "夹": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 夾／袷；现存可达字形 夾、袷。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "她": {
+    "decision": "rejected",
+    "reason": "现代女性代词与他有明确区分。",
+    "sources": []
+  },
+  "姬": {
+    "target": "姫",
+    "path": [
+      {
+        "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+        "from": "姬",
+        "to": "姫"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "词条明确将姫列为姬的异体；采用其姬字用法，不把姫的其他读音当作输入含义。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=9979&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "娴": {
+    "target": "嫻",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "娴",
+        "to": "嫻"
+      }
+    ],
+    "traditional_candidates": [
+      "嫺",
+      "嫻"
+    ],
+    "reason": "嫺与嫻为异体关系；OpenCC 两候选为同字写法，选择已有嫻。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=10240&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "宁": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 寧／甯；现存可达字形 寧、甯。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "尝": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 嘗／嚐；现存可达字形 嘗、甞。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "峒": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 洞；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "帘": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 簾／帘；现存可达字形 簾。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "弈": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 奕；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "彐": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 彑；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "录": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 錄／彔；现存可达字形 録。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "忄": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "怄": {
+    "decision": "insufficient",
+    "reason": "到 嘔 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "恶": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 惡／噁；现存可达字形 悪、惡。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "您": {
+    "decision": "rejected",
+    "reason": "敬称代词不能以祢、袮代替。",
+    "sources": []
+  },
+  "戗": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 創；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "扌": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "扳": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 攀；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "拚": {
+    "decision": "insufficient",
+    "reason": "到 帆 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "拼": {
+    "decision": "insufficient",
+    "reason": "到 秉 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "拽": {
+    "decision": "insufficient",
+    "reason": "到 曳 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "挢": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 嬌；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "掇": {
+    "decision": "insufficient",
+    "reason": "到 挽 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "掳": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 虜；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "揞": {
+    "decision": "insufficient",
+    "reason": "到 掩 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "搞": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 攪；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "摁": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 恩；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "摆": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 擺／襬；现存可达字形 擺。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "摭": {
+    "decision": "insufficient",
+    "reason": "到 拓 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "擗": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 劈；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "术": {
+    "decision": "rejected",
+    "reason": "術与朮分别涉及技艺和植物字，不能固定选一个。",
+    "sources": []
+  },
+  "极": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 極／极；现存可达字形 極。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "枪": {
+    "decision": "insufficient",
+    "reason": "鎗有通槍用法，也有拟声等用法；尚未核实简体全部适用范围。",
+    "sources": [
+      "https://stroke-order.learningweb.moe.edu.tw/dictMean.jsp?ID=37783&la=0"
+    ]
+  },
+  "柒": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 七；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "柜": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 櫃／柜；现存可达字形 匱、櫃、饋。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "柰": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 奈；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "柽": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 柳；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "桌": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 棹；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "棰": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 槌；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "棱": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 棱／稜；现存可达字形 楞、稜。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "楂": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 槎；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "榨": {
+    "decision": "insufficient",
+    "reason": "到 酢 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "毁": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 毀／燬／譭；现存可达字形 毀、燬。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "氯": {
+    "decision": "rejected",
+    "reason": "化学元素氯不能用颜色綠表示。",
+    "sources": []
+  },
+  "氵": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "汇": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 匯／彙／滙；现存可达字形 匯、彙。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "汩": {
+    "decision": "insufficient",
+    "reason": "到 汨 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "沲": {
+    "target": "沱",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "沲",
+        "to": "沱"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "研订将沲认定为沱的异体。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-23487&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "涂": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 塗／涂；现存可达字形 塗。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "涝": {
+    "decision": "insufficient",
+    "reason": "到 潦 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "灬": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "炼": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 煉／鍊；现存可达字形 煉、錬。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "烊": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 煬；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "煅": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 鍛；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "犭": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "痖": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 啞；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "瘅": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 疸；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "瞪": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 瞠；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "砣": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 鉈；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "确": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 確／确；现存可达字形 確。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "硷": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 硷／礆／鹼；现存可达字形 鹸、鹼。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "礻": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "种": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 種／种；现存可达字形 種。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "稣": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 甦；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "签": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 籤／簽；现存可达字形 簽、籤。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "纟": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "纤": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 纖／縴；现存可达字形 砌、繊、纎、纖。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "绉": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 皺；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "绔": {
+    "target": "袴",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters",
+        "from": "绔",
+        "to": "絝"
+      },
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "絝",
+        "to": "袴"
+      }
+    ],
+    "traditional_candidates": [
+      "絝"
+    ],
+    "reason": "唯一繁体絝经研订归入袴、褲的裤子异体系统。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-40844"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "绷": {
+    "target": "繃",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "绷",
+        "to": "繃"
+      }
+    ],
+    "traditional_candidates": [
+      "繃",
+      "綳"
+    ],
+    "reason": "研订将綳归为繃的异体，列出的多读音未形成需要选词的两种字。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-33799&la=0&powerMode=2"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "缋": {
+    "decision": "insufficient",
+    "reason": "到 繪 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "缫": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 繰；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "胗": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 疹；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "胜": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 勝／胜；现存可达字形 勝。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "脏": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 髒／臟；现存可达字形 臓、臟。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "腊": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 臘／腊；现存可达字形 臈、臘。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "膻": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 羶／膻；现存可达字形 羶。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "舀": {
+    "decision": "insufficient",
+    "reason": "到 外 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "舡": {
+    "target": "船",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "舡",
+        "to": "船"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "舡词条释义为船；复用同义船字形。",
+    "sources": [
+      "https://dict.revised.moe.edu.tw/dictView.jsp?ID=7202&la=1&powerMode=0"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "艳": {
+    "target": "艷",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "艳",
+        "to": "艷"
+      }
+    ],
+    "traditional_candidates": [
+      "豔",
+      "艷"
+    ],
+    "reason": "豔词条同时收艳、艷为异体，属于形体差异。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=42590&la=1"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "艹": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "苏": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 蘇／甦／囌；现存可达字形 甦、蘇。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "苤": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 瞥；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "荡": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 蕩／盪；现存可达字形 盪、蕩、蘯。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "荫": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 蔭／廕；现存可达字形 蔭。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "药": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 藥／葯；现存可达字形 葯、薬、藥。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "莩": {
+    "decision": "insufficient",
+    "reason": "到 殍 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "获": {
+    "decision": "rejected",
+    "reason": "獲与穫有获得与收割分工。",
+    "sources": []
+  },
+  "菔": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 蔔；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "菸": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 烟、煙；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "萆": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 蓖；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "葚": {
+    "target": "椹",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "葚",
+        "to": "椹"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "桑葚的葚明确亦作椹；两读音均指桑实。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=68741"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "蒉": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 簣；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "蒌": {
+    "decision": "insufficient",
+    "reason": "到 褸 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "虬": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 蚪；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "蜡": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 蠟／蜡；现存可达字形 蝋、蠟。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "螗": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 螳；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "蠃": {
+    "decision": "rejected",
+    "reason": "蜾蠃的昆虫义不能用螺的字形一概表示。",
+    "sources": []
+  },
+  "衤": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "袅": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 嫋／裊；现存可达字形 嫋。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "訇": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 渹；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "讠": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "证": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 證／証；现存可达字形 証、證。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "谖": {
+    "decision": "insufficient",
+    "reason": "到 煖 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "谥": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 諡／謚；现存可达字形 諡、謚。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "谯": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 誚；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "赝": {
+    "target": "贋",
+    "path": [
+      {
+        "kind": "Unihan.kTraditionalVariant",
+        "from": "赝",
+        "to": "贋"
+      }
+    ],
+    "traditional_candidates": [
+      "贗",
+      "贋"
+    ],
+    "reason": "贋明确为贗的异体；两候选同指伪造。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=43454&la=0"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "赞": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 贊／讚；现存可达字形 讚、賛、贊。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "蹋": {
+    "target": "踏",
+    "path": [
+      {
+        "kind": "Unihan.kSemanticVariant",
+        "from": "蹋",
+        "to": "踏"
+      }
+    ],
+    "traditional_candidates": [],
+    "reason": "比较正文说明蹋同踏，糟蹋亦作糟踏；采用该异体关系。",
+    "sources": [
+      "https://chardb.iis.sinica.edu.tw/meancompare/8E0F/8E4B"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "轱": {
+    "decision": "insufficient",
+    "reason": "到 轂 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "迕": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 忤；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "迨": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 逮；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "适": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 適／适；现存可达字形 適。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "邕": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 雍；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "邬": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 塢；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "酹": {
+    "decision": "insufficient",
+    "reason": "到 儡 的关系均涉及局部语义变体；不足以授权全场景字形别名。",
+    "sources": []
+  },
+  "鉴": {
+    "decision": "insufficient",
+    "reason": "鑑、鑒虽有同源异体依据，字典亦指出实际用法分工；暂不固定选字。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=47697&la=1"
+    ]
+  },
+  "鎏": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 鏐；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "钅": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "针": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 針／鍼；现存可达字形 箴、針、鍼。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "钟": {
+    "decision": "rejected",
+    "reason": "鐘与鍾有钟器与聚集等分工。",
+    "sources": []
+  },
+  "钥": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 鑰／鈅；现存可达字形 鑰。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "钯": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 耙；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "钻": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 鑽／鉆；现存可达字形 鉗、鑚、鑽。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "链": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 鏈／鍊；现存可达字形 錬、鏈。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "锄": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 鋤／耡；现存可达字形 耡、鋤。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "锗": {
+    "decision": "rejected",
+    "reason": "化学元素锗不能用堵表示。",
+    "sources": []
+  },
+  "镢": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 钁／鐝；现存可达字形 钁。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "镰": {
+    "target": "鎌",
+    "path": [
+      {
+        "kind": "OpenCC.STCharacters.candidate",
+        "from": "镰",
+        "to": "鎌"
+      }
+    ],
+    "traditional_candidates": [
+      "鐮",
+      "鎌"
+    ],
+    "reason": "鐮的镰刀用法可写鎌；目标另有古义不改变输入镰的含义。",
+    "sources": [
+      "https://dict.variants.moe.edu.tw/dictView.jsp?ID=74072&la=0"
+    ],
+    "decision": "approved",
+    "review_date": "2026-09-15"
+  },
+  "闫": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 閻；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "闲": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 閒／閑；现存可达字形 閑、閒、間。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "阝": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "鞒": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 橇；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  },
+  "须": {
+    "decision": "rejected",
+    "reason": "須与鬚有须要与胡须分工。",
+    "sources": []
+  },
+  "饣": {
+    "decision": "rejected",
+    "reason": "部件形体不等于完整字形；替换将改变输入字的可见结构。",
+    "sources": []
+  },
+  "饥": {
+    "decision": "insufficient",
+    "reason": "简繁候选为 飢／饑；现存可达字形 飢、饑。尚无足够释义证据排除词义或用法分工，不能按第一个或唯一现存字形选择。",
+    "sources": []
+  },
+  "鱿": {
+    "decision": "insufficient",
+    "reason": "数据可达字形 鰌；尚未取得足够字典正文证明可无上下文复用，保持待核实。",
+    "sources": []
+  }
+}

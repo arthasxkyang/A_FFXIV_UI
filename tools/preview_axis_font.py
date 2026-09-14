@@ -11,7 +11,7 @@ fonts = [ImageFont.truetype(str(ROOT / 'Media/Fonts' / name), 36)
          for name in ('AxisRegular.ttf', 'AxisRegular-CJKReuse.ttf')]
 samples = [
     ('Names / spells (same input text)', '目标 龙骑士 猎人 宠物 治疗 阅读'),
-    ('Additional reviewed variants', '步 每 涉 吞 户 产 绝 鸡'),
+    ('Additional reviewed variants', '姬 葚 绔 勋 娴 绷 赝 镰'),
     ('Unresolved ambiguous characters (expected missing)', '发 术 历 获'),
 ]
 draw.text((32, 22), 'Original AXIS', font=label, fill='#ffffff')

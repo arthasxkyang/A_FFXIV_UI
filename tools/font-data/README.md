@@ -14,3 +14,9 @@
 - `UniJIS-UTF32-H` 原样复制自 [Adobe cmap-resources](https://github.com/adobe-type-tools/cmap-resources) 的 `Adobe-Japan1-7/CMap/UniJIS-UTF32-H`，固定提交 `f5cf3bca7fdfeaceb77aa82847e974f2306c20b4`，BSD 许可原文保留在该文件头部。映射到 CID 后只检查源字体实际存在的字形，不能因为 CMap 包含某字就认为源字体也包含它。
 - `reviewed-variants.json` 是本轮显式批准的 53 条映射及证据路径。原有 `reviewed-japanese.json` 五条保持不变。候选图不会自动扩大批准范围，改变字典后仍需复核批准表。
 - 数据文件 SHA-256 固定记录于覆盖报告。数据许可证均不代表 AXIS 字体的修改或再分发许可。
+
+## 全量字典审计
+
+`reviewed-dictionary.json` 保存 15 条新批准映射、全部简繁候选快照、数据路径、释义判断与官方词条链接；`dictionary-audit-decisions.json` 保存 181 个候选字的全部决定。构建核验两表一致性，只有批准记录可加入字体。没有词条正文的记录明确标为证据不足或基于结构、语义冲突的排除，不冒充字典验证。
+
+审计仅使用网页释义的项目概述与链接，不复制字典全文。自动候选不等于正确映射；证据来源及核查日期可逐条追溯。机器校验能够检查记录一致性，不能代替人工判断释义是否充分。

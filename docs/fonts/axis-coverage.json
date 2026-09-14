@@ -1,6 +1,6 @@
 {
   "source_sha256": "8a7db9cdaf207f1672ec1e527c5cd6889858a19d70d1d19b88718d455a1aa36a",
-  "output_sha256": "0f3ff5697c15058f187f3e1475db9e8fba52757e87a66c333c90faf6782c20d3",
+  "output_sha256": "78103e27911c50f8197be7d2eb5b041c6be8ce5335cba17900a9745a9dfe2a74",
   "opencc_commit": "c363a7ba51d487950982bd8a589211ffbfd95ba1",
   "dictionary_sha256": {
     "STCharacters.txt": "a0ca1601c70648cf48b33c3c6210ccbecc5c7eead4b4c3daf76587ba2c03582b",
@@ -8,27 +8,62 @@
     "reviewed-japanese.json": "bd06c4d141ff964d630eaaa9983bc5a244bf45a28b71113925487549d3c3042b",
     "reviewed-variants.json": "941fd62d273a7f03da9d6a886c4f655b204ed25a50f2d381be2094f66c597db0",
     "Unihan_Variants.txt": "3f23cd71872633f3350875d25bd388e83b60fa71807634c9a600ec26f38a68ab",
-    "UniJIS-UTF32-H": "1c6a4b07e994dfb29e32522a928e86cfa3d18dfd3ae287044de97a923fa578fd"
+    "UniJIS-UTF32-H": "1c6a4b07e994dfb29e32522a928e86cfa3d18dfd3ae287044de97a923fa578fd",
+    "reviewed-dictionary.json": "2f7a6fc7d0f8653b84c343c8736e07422328f24b2d0c589cd7ffce091d202385",
+    "dictionary-audit-decisions.json": "832dd99c85ea25b0ce9878118c86adcc269979505d93636874a68a87a927cbb9"
   },
   "scope": "GB2312 6763 Han characters; original mappings preserved",
   "counts": {
     "total": 6763,
     "original_covered": 3385,
-    "added": 1455,
-    "covered_after": 4840,
-    "ambiguous": 86,
-    "unresolved_no_approved_mapping": 1837
+    "added": 1470,
+    "covered_after": 4855,
+    "ambiguous": 78,
+    "unresolved_no_approved_mapping": 1830
+  },
+  "full_audit_counts": {
+    "total": 1923,
+    "with_candidates": 181,
+    "approved": 15,
+    "insufficient": 139,
+    "no_candidate": 1742,
+    "rejected": 27
   },
   "audit": {
     "unihan_version": "17.0.0",
     "adobe_commit": "f5cf3bca7fdfeaceb77aa82847e974f2306c20b4",
     "adobe_exact_remaining": 0,
-    "remaining_with_candidates": 178,
-    "remaining_without_candidates_in_audited_sources": 1745,
+    "remaining_with_candidates": 166,
+    "remaining_without_candidates_in_audited_sources": 1742,
     "pending": [
       {
         "character": "丰",
         "candidates": [
+          {
+            "target": "豊",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "丰",
+                "to": "豐"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "豐",
+                "to": "豊"
+              }
+            ]
+          },
+          {
+            "target": "豐",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "丰",
+                "to": "豐"
+              }
+            ]
+          },
           {
             "target": "豐",
             "path": [
@@ -41,7 +76,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "亻",
@@ -58,11 +93,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "仑",
         "candidates": [
+          {
+            "target": "侖",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "仑",
+                "to": "侖"
+              }
+            ]
+          },
+          {
+            "target": "侖",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "仑",
+                "to": "崙"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "崙",
+                "to": "侖"
+              }
+            ]
+          },
           {
             "target": "侖",
             "path": [
@@ -72,10 +132,50 @@
                 "to": "侖"
               }
             ]
+          },
+          {
+            "target": "崘",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "仑",
+                "to": "崙"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "崙",
+                "to": "崘"
+              }
+            ]
+          },
+          {
+            "target": "崙",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "仑",
+                "to": "侖"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "侖",
+                "to": "崙"
+              }
+            ]
+          },
+          {
+            "target": "崙",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "仑",
+                "to": "崙"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "仳",
@@ -92,7 +192,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "份",
@@ -109,7 +209,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "仿",
@@ -123,14 +223,49 @@
                 "to": "倣"
               }
             ]
+          },
+          {
+            "target": "彷",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "仿",
+                "to": "彷"
+              }
+            ]
+          },
+          {
+            "target": "髣",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "仿",
+                "to": "彷"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "彷",
+                "to": "髣"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "伙",
         "candidates": [
+          {
+            "target": "夥",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "伙",
+                "to": "夥"
+              }
+            ]
+          },
           {
             "target": "夥",
             "path": [
@@ -143,7 +278,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "你",
@@ -170,11 +305,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "佣",
         "candidates": [
+          {
+            "target": "傭",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "佣",
+                "to": "傭"
+              }
+            ]
+          },
           {
             "target": "傭",
             "path": [
@@ -187,7 +332,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "佬",
@@ -204,24 +349,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "倘",
-        "candidates": [
-          {
-            "target": "儻",
-            "path": [
-              {
-                "kind": "Unihan.kSemanticVariant",
-                "from": "倘",
-                "to": "儻"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "偎",
@@ -238,7 +366,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "儆",
@@ -255,7 +383,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "刂",
@@ -272,11 +400,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "划",
         "candidates": [
+          {
+            "target": "劃",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "划",
+                "to": "劃"
+              }
+            ]
+          },
           {
             "target": "劃",
             "path": [
@@ -299,7 +437,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "刨",
@@ -316,11 +454,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "别",
         "candidates": [
+          {
+            "target": "別",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "别",
+                "to": "別"
+              }
+            ]
+          },
           {
             "target": "別",
             "path": [
@@ -333,24 +481,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "勋",
-        "candidates": [
-          {
-            "target": "勛",
-            "path": [
-              {
-                "kind": "Unihan.kTraditionalVariant",
-                "from": "勋",
-                "to": "勛"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "勰",
@@ -387,7 +518,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "卤",
@@ -396,9 +527,29 @@
             "target": "滷",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "卤",
+                "to": "滷"
+              }
+            ]
+          },
+          {
+            "target": "滷",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "卤",
                 "to": "滷"
+              }
+            ]
+          },
+          {
+            "target": "鹵",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "卤",
+                "to": "鹵"
               }
             ]
           },
@@ -414,7 +565,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "历",
@@ -428,10 +579,70 @@
                 "to": "厲"
               }
             ]
+          },
+          {
+            "target": "暦",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "历",
+                "to": "曆"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "曆",
+                "to": "暦"
+              }
+            ]
+          },
+          {
+            "target": "歴",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "历",
+                "to": "曆"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "曆",
+                "to": "歴"
+              }
+            ]
+          },
+          {
+            "target": "歴",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "历",
+                "to": "歷"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "歷",
+                "to": "歴"
+              }
+            ]
+          },
+          {
+            "target": "歴",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "历",
+                "to": "歷"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "歷",
+                "to": "歴"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "叁",
@@ -458,11 +669,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "发",
         "candidates": [
+          {
+            "target": "発",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "发",
+                "to": "發"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "發",
+                "to": "発"
+              }
+            ]
+          },
+          {
+            "target": "發",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "发",
+                "to": "發"
+              }
+            ]
+          },
           {
             "target": "發",
             "path": [
@@ -470,6 +706,31 @@
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "发",
                 "to": "發"
+              }
+            ]
+          },
+          {
+            "target": "髪",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "发",
+                "to": "髮"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "髮",
+                "to": "髪"
+              }
+            ]
+          },
+          {
+            "target": "髮",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "发",
+                "to": "髮"
               }
             ]
           },
@@ -485,11 +746,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "叹",
         "candidates": [
+          {
+            "target": "嘆",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "叹",
+                "to": "嘆"
+              }
+            ]
+          },
+          {
+            "target": "嘆",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "叹",
+                "to": "歎"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "歎",
+                "to": "嘆"
+              }
+            ]
+          },
           {
             "target": "嘆",
             "path": [
@@ -499,10 +785,35 @@
                 "to": "嘆"
               }
             ]
+          },
+          {
+            "target": "歎",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "叹",
+                "to": "嘆"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "嘆",
+                "to": "歎"
+              }
+            ]
+          },
+          {
+            "target": "歎",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "叹",
+                "to": "歎"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "吒",
@@ -519,7 +830,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "吲",
@@ -536,7 +847,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "呃",
@@ -553,24 +864,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "哗",
-        "candidates": [
-          {
-            "target": "嘩",
-            "path": [
-              {
-                "kind": "Unihan.kTraditionalVariant",
-                "from": "哗",
-                "to": "嘩"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "哼",
@@ -587,7 +881,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "唉",
@@ -614,7 +908,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "啃",
@@ -631,7 +925,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "啊",
@@ -648,24 +942,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "啮",
-        "candidates": [
-          {
-            "target": "嚙",
-            "path": [
-              {
-                "kind": "Unihan.kTraditionalVariant",
-                "from": "啮",
-                "to": "嚙"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "喂",
@@ -692,7 +969,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "嘻",
@@ -709,7 +986,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "嘿",
@@ -726,7 +1003,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "囟",
@@ -753,11 +1030,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "团",
         "candidates": [
+          {
+            "target": "団",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "团",
+                "to": "團"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "團",
+                "to": "団"
+              }
+            ]
+          },
+          {
+            "target": "團",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "团",
+                "to": "團"
+              }
+            ]
+          },
           {
             "target": "團",
             "path": [
@@ -770,7 +1072,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "圩",
@@ -787,11 +1089,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "坛",
         "candidates": [
+          {
+            "target": "壇",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "坛",
+                "to": "壇"
+              }
+            ]
+          },
           {
             "target": "壇",
             "path": [
@@ -813,6 +1125,21 @@
             ]
           },
           {
+            "target": "壜",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "坛",
+                "to": "罈"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "罈",
+                "to": "壜"
+              }
+            ]
+          },
+          {
             "target": "罎",
             "path": [
               {
@@ -824,7 +1151,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "坭",
@@ -851,11 +1178,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "坯",
         "candidates": [
+          {
+            "target": "坏",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "坯",
+                "to": "坏"
+              }
+            ]
+          },
           {
             "target": "坏",
             "path": [
@@ -875,10 +1212,25 @@
                 "to": "坏"
               }
             ]
+          },
+          {
+            "target": "壞",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "坯",
+                "to": "坏"
+              },
+              {
+                "kind": "Unihan.kTraditionalVariant",
+                "from": "坏",
+                "to": "壞"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "埽",
@@ -895,7 +1247,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "复",
@@ -904,9 +1256,29 @@
             "target": "復",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "复",
+                "to": "復"
+              }
+            ]
+          },
+          {
+            "target": "復",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "复",
                 "to": "復"
+              }
+            ]
+          },
+          {
+            "target": "複",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "复",
+                "to": "複"
               }
             ]
           },
@@ -924,6 +1296,16 @@
             "target": "覆",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "复",
+                "to": "覆"
+              }
+            ]
+          },
+          {
+            "target": "覆",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "复",
                 "to": "覆"
@@ -932,11 +1314,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "夹",
         "candidates": [
+          {
+            "target": "夾",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "夹",
+                "to": "夾"
+              }
+            ]
+          },
           {
             "target": "夾",
             "path": [
@@ -946,10 +1338,20 @@
                 "to": "夾"
               }
             ]
+          },
+          {
+            "target": "袷",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "夹",
+                "to": "袷"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "她",
@@ -966,45 +1368,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "姬",
-        "candidates": [
-          {
-            "target": "姫",
-            "path": [
-              {
-                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
-                "from": "姬",
-                "to": "姫"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "娴",
-        "candidates": [
-          {
-            "target": "嫻",
-            "path": [
-              {
-                "kind": "Unihan.kTraditionalVariant",
-                "from": "娴",
-                "to": "嫻"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "宁",
         "candidates": [
+          {
+            "target": "寧",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "宁",
+                "to": "寧"
+              }
+            ]
+          },
           {
             "target": "寧",
             "path": [
@@ -1014,14 +1392,34 @@
                 "to": "寧"
               }
             ]
+          },
+          {
+            "target": "甯",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "宁",
+                "to": "甯"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "尝",
         "candidates": [
+          {
+            "target": "嘗",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "尝",
+                "to": "嘗"
+              }
+            ]
+          },
           {
             "target": "嘗",
             "path": [
@@ -1031,10 +1429,25 @@
                 "to": "嘗"
               }
             ]
+          },
+          {
+            "target": "甞",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "尝",
+                "to": "嘗"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "嘗",
+                "to": "甞"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "峒",
@@ -1051,11 +1464,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "帘",
         "candidates": [
+          {
+            "target": "簾",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "帘",
+                "to": "簾"
+              }
+            ]
+          },
           {
             "target": "簾",
             "path": [
@@ -1068,7 +1491,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "弈",
@@ -1085,7 +1508,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "彐",
@@ -1102,11 +1525,26 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "录",
         "candidates": [
+          {
+            "target": "録",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "录",
+                "to": "錄"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "錄",
+                "to": "録"
+              }
+            ]
+          },
           {
             "target": "録",
             "path": [
@@ -1119,7 +1557,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "忄",
@@ -1136,7 +1574,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "怄",
@@ -1155,14 +1593,54 @@
                 "to": "嘔"
               }
             ]
+          },
+          {
+            "target": "嘔",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "怄",
+                "to": "慪"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "慪",
+                "to": "嘔"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "恶",
         "candidates": [
+          {
+            "target": "悪",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "恶",
+                "to": "惡"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "惡",
+                "to": "悪"
+              }
+            ]
+          },
+          {
+            "target": "惡",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "恶",
+                "to": "惡"
+              }
+            ]
+          },
           {
             "target": "惡",
             "path": [
@@ -1175,7 +1653,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "您",
@@ -1202,7 +1680,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "戗",
@@ -1221,10 +1699,25 @@
                 "to": "創"
               }
             ]
+          },
+          {
+            "target": "創",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "戗",
+                "to": "戧"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "戧",
+                "to": "創"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "扌",
@@ -1241,7 +1734,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "扳",
@@ -1258,7 +1751,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "拚",
@@ -1275,7 +1768,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "拼",
@@ -1292,7 +1785,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "拽",
@@ -1309,7 +1802,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "挢",
@@ -1328,10 +1821,25 @@
                 "to": "嬌"
               }
             ]
+          },
+          {
+            "target": "嬌",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "挢",
+                "to": "撟"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "撟",
+                "to": "嬌"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "掇",
@@ -1348,7 +1856,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "掳",
@@ -1382,10 +1890,40 @@
                 "to": "虜"
               }
             ]
+          },
+          {
+            "target": "虜",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "掳",
+                "to": "擄"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "擄",
+                "to": "虜"
+              }
+            ]
+          },
+          {
+            "target": "虜",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "掳",
+                "to": "擄"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "擄",
+                "to": "虜"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "揞",
@@ -1402,7 +1940,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "搞",
@@ -1419,7 +1957,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "摁",
@@ -1436,11 +1974,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "摆",
         "candidates": [
+          {
+            "target": "擺",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "摆",
+                "to": "擺"
+              }
+            ]
+          },
           {
             "target": "擺",
             "path": [
@@ -1453,7 +2001,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "摭",
@@ -1470,7 +2018,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "擗",
@@ -1487,11 +2035,31 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "术",
         "candidates": [
+          {
+            "target": "朮",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "术",
+                "to": "朮"
+              }
+            ]
+          },
+          {
+            "target": "術",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "术",
+                "to": "術"
+              }
+            ]
+          },
           {
             "target": "術",
             "path": [
@@ -1504,11 +2072,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "极",
         "candidates": [
+          {
+            "target": "極",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "极",
+                "to": "極"
+              }
+            ]
+          },
           {
             "target": "極",
             "path": [
@@ -1521,11 +2099,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "枪",
         "candidates": [
+          {
+            "target": "槍",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "枪",
+                "to": "槍"
+              }
+            ]
+          },
           {
             "target": "槍",
             "path": [
@@ -1535,10 +2123,20 @@
                 "to": "槍"
               }
             ]
+          },
+          {
+            "target": "鎗",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "枪",
+                "to": "鎗"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "柒",
@@ -1565,11 +2163,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "柜",
         "candidates": [
+          {
+            "target": "匱",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "柜",
+                "to": "櫃"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "櫃",
+                "to": "匱"
+              }
+            ]
+          },
+          {
+            "target": "櫃",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "柜",
+                "to": "櫃"
+              }
+            ]
+          },
           {
             "target": "櫃",
             "path": [
@@ -1589,10 +2212,25 @@
                 "to": "櫃"
               }
             ]
+          },
+          {
+            "target": "饋",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "柜",
+                "to": "櫃"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "櫃",
+                "to": "饋"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "柰",
@@ -1609,7 +2247,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "柽",
@@ -1628,10 +2266,25 @@
                 "to": "柳"
               }
             ]
+          },
+          {
+            "target": "柳",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "柽",
+                "to": "檉"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "檉",
+                "to": "柳"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "桌",
@@ -1658,7 +2311,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "棰",
@@ -1675,11 +2328,26 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "棱",
         "candidates": [
+          {
+            "target": "楞",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "棱",
+                "to": "稜"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "稜",
+                "to": "楞"
+              }
+            ]
+          },
           {
             "target": "楞",
             "path": [
@@ -1704,6 +2372,16 @@
             "target": "稜",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "棱",
+                "to": "稜"
+              }
+            ]
+          },
+          {
+            "target": "稜",
+            "path": [
+              {
                 "kind": "Unihan.kSemanticVariant",
                 "from": "棱",
                 "to": "稜"
@@ -1712,7 +2390,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "楂",
@@ -1729,7 +2407,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "榨",
@@ -1746,11 +2424,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "毁",
         "candidates": [
+          {
+            "target": "毀",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "毁",
+                "to": "毀"
+              }
+            ]
+          },
           {
             "target": "毀",
             "path": [
@@ -1760,10 +2448,20 @@
                 "to": "毀"
               }
             ]
+          },
+          {
+            "target": "燬",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "毁",
+                "to": "燬"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "氯",
@@ -1780,7 +2478,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "氵",
@@ -1797,7 +2495,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "汇",
@@ -1806,9 +2504,44 @@
             "target": "匯",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "汇",
+                "to": "匯"
+              }
+            ]
+          },
+          {
+            "target": "匯",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "汇",
+                "to": "滙"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "滙",
+                "to": "匯"
+              }
+            ]
+          },
+          {
+            "target": "匯",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "汇",
                 "to": "匯"
+              }
+            ]
+          },
+          {
+            "target": "彙",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "汇",
+                "to": "彙"
               }
             ]
           },
@@ -1824,7 +2557,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "汩",
@@ -1841,28 +2574,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "沲",
-        "candidates": [
-          {
-            "target": "沱",
-            "path": [
-              {
-                "kind": "Unihan.kSemanticVariant",
-                "from": "沲",
-                "to": "沱"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "涂",
         "candidates": [
+          {
+            "target": "塗",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "涂",
+                "to": "塗"
+              }
+            ]
+          },
           {
             "target": "塗",
             "path": [
@@ -1875,7 +2601,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "涝",
@@ -1894,10 +2620,25 @@
                 "to": "潦"
               }
             ]
+          },
+          {
+            "target": "潦",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "涝",
+                "to": "澇"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "澇",
+                "to": "潦"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "灬",
@@ -1914,11 +2655,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "炼",
         "candidates": [
+          {
+            "target": "煉",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "炼",
+                "to": "煉"
+              }
+            ]
+          },
           {
             "target": "煉",
             "path": [
@@ -1928,10 +2679,25 @@
                 "to": "煉"
               }
             ]
+          },
+          {
+            "target": "錬",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "炼",
+                "to": "鍊"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "鍊",
+                "to": "錬"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "烊",
@@ -1948,7 +2714,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "煅",
@@ -1965,7 +2731,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "犭",
@@ -1982,7 +2748,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "痖",
@@ -2001,10 +2767,25 @@
                 "to": "啞"
               }
             ]
+          },
+          {
+            "target": "啞",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "痖",
+                "to": "瘂"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "瘂",
+                "to": "啞"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "瘅",
@@ -2023,10 +2804,25 @@
                 "to": "疸"
               }
             ]
+          },
+          {
+            "target": "疸",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "瘅",
+                "to": "癉"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "癉",
+                "to": "疸"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "瞪",
@@ -2043,7 +2839,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "砣",
@@ -2060,11 +2856,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "确",
         "candidates": [
+          {
+            "target": "確",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "确",
+                "to": "確"
+              }
+            ]
+          },
           {
             "target": "確",
             "path": [
@@ -2077,11 +2883,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "硷",
         "candidates": [
+          {
+            "target": "鹸",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "硷",
+                "to": "鹼"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "鹼",
+                "to": "鹸"
+              }
+            ]
+          },
+          {
+            "target": "鹼",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "硷",
+                "to": "鹼"
+              }
+            ]
+          },
           {
             "target": "鹼",
             "path": [
@@ -2094,7 +2925,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "礻",
@@ -2111,11 +2942,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "种",
         "candidates": [
+          {
+            "target": "種",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "种",
+                "to": "種"
+              }
+            ]
+          },
           {
             "target": "種",
             "path": [
@@ -2128,7 +2969,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "稣",
@@ -2147,10 +2988,25 @@
                 "to": "甦"
               }
             ]
+          },
+          {
+            "target": "甦",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "稣",
+                "to": "穌"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "穌",
+                "to": "甦"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "签",
@@ -2159,9 +3015,29 @@
             "target": "簽",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "签",
+                "to": "簽"
+              }
+            ]
+          },
+          {
+            "target": "簽",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "签",
                 "to": "簽"
+              }
+            ]
+          },
+          {
+            "target": "籤",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "签",
+                "to": "籤"
               }
             ]
           },
@@ -2177,7 +3053,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "纟",
@@ -2196,14 +3072,84 @@
                 "to": "糸"
               }
             ]
+          },
+          {
+            "target": "糸",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "纟",
+                "to": "糹"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "糹",
+                "to": "糸"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "纤",
         "candidates": [
+          {
+            "target": "砌",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "纤",
+                "to": "纖"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "纖",
+                "to": "砌"
+              }
+            ]
+          },
+          {
+            "target": "繊",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "纤",
+                "to": "纖"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "纖",
+                "to": "繊"
+              }
+            ]
+          },
+          {
+            "target": "纎",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "纤",
+                "to": "纖"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "纖",
+                "to": "纎"
+              }
+            ]
+          },
+          {
+            "target": "纖",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "纤",
+                "to": "纖"
+              }
+            ]
+          },
           {
             "target": "纖",
             "path": [
@@ -2216,7 +3162,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "绉",
@@ -2235,49 +3181,25 @@
                 "to": "皺"
               }
             ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "绔",
-        "candidates": [
+          },
           {
-            "target": "袴",
+            "target": "皺",
             "path": [
               {
-                "kind": "OpenCC.STCharacters",
-                "from": "绔",
-                "to": "絝"
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "绉",
+                "to": "縐"
               },
               {
                 "kind": "Unihan.kSemanticVariant",
-                "from": "絝",
-                "to": "袴"
+                "from": "縐",
+                "to": "皺"
               }
             ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "绷",
-        "candidates": [
-          {
-            "target": "繃",
-            "path": [
-              {
-                "kind": "Unihan.kTraditionalVariant",
-                "from": "绷",
-                "to": "繃"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "缋",
@@ -2296,10 +3218,25 @@
                 "to": "繪"
               }
             ]
+          },
+          {
+            "target": "繪",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "缋",
+                "to": "繢"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "繢",
+                "to": "繪"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "缫",
@@ -2318,10 +3255,25 @@
                 "to": "繰"
               }
             ]
+          },
+          {
+            "target": "繰",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "缫",
+                "to": "繅"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "繅",
+                "to": "繰"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "胗",
@@ -2338,11 +3290,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "胜",
         "candidates": [
+          {
+            "target": "勝",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "胜",
+                "to": "勝"
+              }
+            ]
+          },
           {
             "target": "勝",
             "path": [
@@ -2355,11 +3317,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "脏",
         "candidates": [
+          {
+            "target": "臓",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "脏",
+                "to": "臟"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "臟",
+                "to": "臓"
+              }
+            ]
+          },
+          {
+            "target": "臟",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "脏",
+                "to": "臟"
+              }
+            ]
+          },
           {
             "target": "臟",
             "path": [
@@ -2372,11 +3359,26 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "腊",
         "candidates": [
+          {
+            "target": "臈",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "腊",
+                "to": "臘"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "臘",
+                "to": "臈"
+              }
+            ]
+          },
           {
             "target": "臈",
             "path": [
@@ -2391,6 +3393,16 @@
             "target": "臘",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "腊",
+                "to": "臘"
+              }
+            ]
+          },
+          {
+            "target": "臘",
+            "path": [
+              {
                 "kind": "Unihan.kSemanticVariant",
                 "from": "腊",
                 "to": "臘"
@@ -2409,11 +3421,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "膻",
         "candidates": [
+          {
+            "target": "羶",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "膻",
+                "to": "羶"
+              }
+            ]
+          },
           {
             "target": "羶",
             "path": [
@@ -2426,7 +3448,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "舀",
@@ -2443,41 +3465,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "舡",
-        "candidates": [
-          {
-            "target": "船",
-            "path": [
-              {
-                "kind": "Unihan.kSemanticVariant",
-                "from": "舡",
-                "to": "船"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "艳",
-        "candidates": [
-          {
-            "target": "艷",
-            "path": [
-              {
-                "kind": "Unihan.kTraditionalVariant",
-                "from": "艳",
-                "to": "艷"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "艹",
@@ -2504,11 +3492,31 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "苏",
         "candidates": [
+          {
+            "target": "甦",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "苏",
+                "to": "甦"
+              }
+            ]
+          },
+          {
+            "target": "蘇",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "苏",
+                "to": "蘇"
+              }
+            ]
+          },
           {
             "target": "蘇",
             "path": [
@@ -2521,7 +3529,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "苤",
@@ -2538,11 +3546,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "荡",
         "candidates": [
+          {
+            "target": "盪",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "荡",
+                "to": "盪"
+              }
+            ]
+          },
+          {
+            "target": "盪",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "荡",
+                "to": "蕩"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "蕩",
+                "to": "盪"
+              }
+            ]
+          },
           {
             "target": "盪",
             "path": [
@@ -2557,19 +3590,99 @@
             "target": "蕩",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "荡",
+                "to": "盪"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "盪",
+                "to": "蕩"
+              }
+            ]
+          },
+          {
+            "target": "蕩",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "荡",
+                "to": "蕩"
+              }
+            ]
+          },
+          {
+            "target": "蕩",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "荡",
                 "to": "蕩"
               }
             ]
+          },
+          {
+            "target": "蘯",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "荡",
+                "to": "盪"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "盪",
+                "to": "蘯"
+              }
+            ]
+          },
+          {
+            "target": "蘯",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "荡",
+                "to": "蕩"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "蕩",
+                "to": "蘯"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "荫",
         "candidates": [
+          {
+            "target": "蔭",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "荫",
+                "to": "廕"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "廕",
+                "to": "蔭"
+              }
+            ]
+          },
+          {
+            "target": "蔭",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "荫",
+                "to": "蔭"
+              }
+            ]
+          },
           {
             "target": "蔭",
             "path": [
@@ -2582,7 +3695,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "药",
@@ -2591,9 +3704,74 @@
             "target": "葯",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "药",
+                "to": "葯"
+              }
+            ]
+          },
+          {
+            "target": "葯",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "药",
+                "to": "藥"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "藥",
+                "to": "葯"
+              }
+            ]
+          },
+          {
+            "target": "葯",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "药",
                 "to": "葯"
+              }
+            ]
+          },
+          {
+            "target": "薬",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "药",
+                "to": "藥"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "藥",
+                "to": "薬"
+              }
+            ]
+          },
+          {
+            "target": "藥",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "药",
+                "to": "葯"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "葯",
+                "to": "藥"
+              }
+            ]
+          },
+          {
+            "target": "藥",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "药",
+                "to": "藥"
               }
             ]
           },
@@ -2609,7 +3787,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "莩",
@@ -2626,7 +3804,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "获",
@@ -2635,9 +3813,29 @@
             "target": "獲",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "获",
+                "to": "獲"
+              }
+            ]
+          },
+          {
+            "target": "獲",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "获",
                 "to": "獲"
+              }
+            ]
+          },
+          {
+            "target": "穫",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "获",
+                "to": "穫"
               }
             ]
           },
@@ -2653,7 +3851,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "菔",
@@ -2670,7 +3868,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "菸",
@@ -2727,7 +3925,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "萆",
@@ -2744,24 +3942,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "葚",
-        "candidates": [
-          {
-            "target": "椹",
-            "path": [
-              {
-                "kind": "Unihan.kSemanticVariant",
-                "from": "葚",
-                "to": "椹"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "蒉",
@@ -2780,10 +3961,25 @@
                 "to": "簣"
               }
             ]
+          },
+          {
+            "target": "簣",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "蒉",
+                "to": "蕢"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "蕢",
+                "to": "簣"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "蒌",
@@ -2802,10 +3998,25 @@
                 "to": "褸"
               }
             ]
+          },
+          {
+            "target": "褸",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "蒌",
+                "to": "蔞"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "蔞",
+                "to": "褸"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "虬",
@@ -2822,11 +4033,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "蜡",
         "candidates": [
+          {
+            "target": "蝋",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "蜡",
+                "to": "蠟"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "蠟",
+                "to": "蝋"
+              }
+            ]
+          },
+          {
+            "target": "蠟",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "蜡",
+                "to": "蠟"
+              }
+            ]
+          },
           {
             "target": "蠟",
             "path": [
@@ -2859,7 +4095,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "螗",
@@ -2876,7 +4112,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "蠃",
@@ -2893,7 +4129,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "衤",
@@ -2920,7 +4156,24 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
+      },
+      {
+        "character": "袅",
+        "candidates": [
+          {
+            "target": "嫋",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "袅",
+                "to": "嫋"
+              }
+            ]
+          }
+        ],
+        "adobe_exact_glyph": null,
+        "status": "insufficient"
       },
       {
         "character": "訇",
@@ -2937,7 +4190,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "讠",
@@ -2956,14 +4209,94 @@
                 "to": "言"
               }
             ]
+          },
+          {
+            "target": "言",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "讠",
+                "to": "訁"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "訁",
+                "to": "言"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "证",
         "candidates": [
+          {
+            "target": "証",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "证",
+                "to": "証"
+              }
+            ]
+          },
+          {
+            "target": "証",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "证",
+                "to": "證"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "證",
+                "to": "証"
+              }
+            ]
+          },
+          {
+            "target": "証",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "证",
+                "to": "證"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "證",
+                "to": "証"
+              }
+            ]
+          },
+          {
+            "target": "證",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "证",
+                "to": "証"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "証",
+                "to": "證"
+              }
+            ]
+          },
+          {
+            "target": "證",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "证",
+                "to": "證"
+              }
+            ]
+          },
           {
             "target": "證",
             "path": [
@@ -2976,7 +4309,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "谖",
@@ -2995,14 +4328,79 @@
                 "to": "煖"
               }
             ]
+          },
+          {
+            "target": "煖",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "谖",
+                "to": "諼"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "諼",
+                "to": "煖"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "谥",
         "candidates": [
+          {
+            "target": "諡",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "谥",
+                "to": "諡"
+              }
+            ]
+          },
+          {
+            "target": "諡",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "谥",
+                "to": "謚"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "謚",
+                "to": "諡"
+              }
+            ]
+          },
+          {
+            "target": "謚",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "谥",
+                "to": "諡"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "諡",
+                "to": "謚"
+              }
+            ]
+          },
+          {
+            "target": "謚",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "谥",
+                "to": "謚"
+              }
+            ]
+          },
           {
             "target": "謚",
             "path": [
@@ -3015,7 +4413,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "谯",
@@ -3034,31 +4432,79 @@
                 "to": "誚"
               }
             ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "赝",
-        "candidates": [
+          },
           {
-            "target": "贋",
+            "target": "誚",
             "path": [
               {
-                "kind": "Unihan.kTraditionalVariant",
-                "from": "赝",
-                "to": "贋"
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "谯",
+                "to": "譙"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "譙",
+                "to": "誚"
               }
             ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "赞",
         "candidates": [
+          {
+            "target": "讚",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "赞",
+                "to": "讚"
+              }
+            ]
+          },
+          {
+            "target": "賛",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "赞",
+                "to": "贊"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "贊",
+                "to": "賛"
+              }
+            ]
+          },
+          {
+            "target": "賛",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "赞",
+                "to": "贊"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "贊",
+                "to": "賛"
+              }
+            ]
+          },
+          {
+            "target": "贊",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "赞",
+                "to": "贊"
+              }
+            ]
+          },
           {
             "target": "贊",
             "path": [
@@ -3071,24 +4517,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
-      },
-      {
-        "character": "蹋",
-        "candidates": [
-          {
-            "target": "踏",
-            "path": [
-              {
-                "kind": "Unihan.kSemanticVariant",
-                "from": "蹋",
-                "to": "踏"
-              }
-            ]
-          }
-        ],
-        "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "轱",
@@ -3107,10 +4536,25 @@
                 "to": "轂"
               }
             ]
+          },
+          {
+            "target": "轂",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "轱",
+                "to": "軲"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "軲",
+                "to": "轂"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "迕",
@@ -3127,7 +4571,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "迨",
@@ -3154,11 +4598,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "适",
         "candidates": [
+          {
+            "target": "適",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "适",
+                "to": "適"
+              }
+            ]
+          },
           {
             "target": "適",
             "path": [
@@ -3171,7 +4625,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "邕",
@@ -3188,7 +4642,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "邬",
@@ -3207,10 +4661,25 @@
                 "to": "塢"
               }
             ]
+          },
+          {
+            "target": "塢",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "邬",
+                "to": "鄔"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鄔",
+                "to": "塢"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "酹",
@@ -3227,11 +4696,61 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "鉴",
         "candidates": [
+          {
+            "target": "鑑",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "鉴",
+                "to": "鑑"
+              }
+            ]
+          },
+          {
+            "target": "鑑",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "鉴",
+                "to": "鑒"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鑒",
+                "to": "鑑"
+              }
+            ]
+          },
+          {
+            "target": "鑒",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "鉴",
+                "to": "鑑"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鑑",
+                "to": "鑒"
+              }
+            ]
+          },
+          {
+            "target": "鑒",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "鉴",
+                "to": "鑒"
+              }
+            ]
+          },
           {
             "target": "鑒",
             "path": [
@@ -3244,7 +4763,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "鎏",
@@ -3261,7 +4780,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "钅",
@@ -3280,14 +4799,84 @@
                 "to": "金"
               }
             ]
+          },
+          {
+            "target": "金",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钅",
+                "to": "釒"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "釒",
+                "to": "金"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "针",
         "candidates": [
+          {
+            "target": "箴",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "针",
+                "to": "針"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "針",
+                "to": "箴"
+              }
+            ]
+          },
+          {
+            "target": "箴",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "针",
+                "to": "鍼"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鍼",
+                "to": "箴"
+              }
+            ]
+          },
+          {
+            "target": "針",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "针",
+                "to": "針"
+              }
+            ]
+          },
+          {
+            "target": "針",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "针",
+                "to": "鍼"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鍼",
+                "to": "針"
+              }
+            ]
+          },
           {
             "target": "針",
             "path": [
@@ -3297,10 +4886,35 @@
                 "to": "針"
               }
             ]
+          },
+          {
+            "target": "鍼",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "针",
+                "to": "針"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "針",
+                "to": "鍼"
+              }
+            ]
+          },
+          {
+            "target": "鍼",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "针",
+                "to": "鍼"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "钟",
@@ -3309,9 +4923,29 @@
             "target": "鍾",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钟",
+                "to": "鍾"
+              }
+            ]
+          },
+          {
+            "target": "鍾",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "钟",
                 "to": "鍾"
+              }
+            ]
+          },
+          {
+            "target": "鐘",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钟",
+                "to": "鐘"
               }
             ]
           },
@@ -3327,11 +4961,21 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "钥",
         "candidates": [
+          {
+            "target": "鑰",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钥",
+                "to": "鑰"
+              }
+            ]
+          },
           {
             "target": "鑰",
             "path": [
@@ -3344,7 +4988,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "钯",
@@ -3363,14 +5007,84 @@
                 "to": "耙"
               }
             ]
+          },
+          {
+            "target": "耙",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钯",
+                "to": "鈀"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鈀",
+                "to": "耙"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "钻",
         "candidates": [
+          {
+            "target": "鉗",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钻",
+                "to": "鉆"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鉆",
+                "to": "鉗"
+              }
+            ]
+          },
+          {
+            "target": "鑚",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钻",
+                "to": "鑽"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鑽",
+                "to": "鑚"
+              }
+            ]
+          },
+          {
+            "target": "鑽",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钻",
+                "to": "鉆"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鉆",
+                "to": "鑽"
+              }
+            ]
+          },
+          {
+            "target": "鑽",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "钻",
+                "to": "鑽"
+              }
+            ]
+          },
           {
             "target": "鑽",
             "path": [
@@ -3383,11 +5097,36 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "链",
         "candidates": [
+          {
+            "target": "錬",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "链",
+                "to": "鍊"
+              },
+              {
+                "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+                "from": "鍊",
+                "to": "錬"
+              }
+            ]
+          },
+          {
+            "target": "鏈",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "链",
+                "to": "鏈"
+              }
+            ]
+          },
           {
             "target": "鏈",
             "path": [
@@ -3400,11 +5139,31 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "锄",
         "candidates": [
+          {
+            "target": "耡",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "锄",
+                "to": "耡"
+              }
+            ]
+          },
+          {
+            "target": "鋤",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "锄",
+                "to": "鋤"
+              }
+            ]
+          },
           {
             "target": "鋤",
             "path": [
@@ -3417,7 +5176,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "锗",
@@ -3436,10 +5195,42 @@
                 "to": "堵"
               }
             ]
+          },
+          {
+            "target": "堵",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "锗",
+                "to": "鍺"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "鍺",
+                "to": "堵"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
+      },
+      {
+        "character": "镢",
+        "candidates": [
+          {
+            "target": "钁",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "镢",
+                "to": "钁"
+              }
+            ]
+          }
+        ],
+        "adobe_exact_glyph": null,
+        "status": "insufficient"
       },
       {
         "character": "闫",
@@ -3458,14 +5249,39 @@
                 "to": "閻"
               }
             ]
+          },
+          {
+            "target": "閻",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "闫",
+                "to": "閆"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "閆",
+                "to": "閻"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "闲",
         "candidates": [
+          {
+            "target": "閑",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "闲",
+                "to": "閑"
+              }
+            ]
+          },
           {
             "target": "閑",
             "path": [
@@ -3480,15 +5296,40 @@
             "target": "閒",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "闲",
+                "to": "閒"
+              }
+            ]
+          },
+          {
+            "target": "閒",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "闲",
                 "to": "閒"
               }
             ]
+          },
+          {
+            "target": "間",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "闲",
+                "to": "閒"
+              },
+              {
+                "kind": "Unihan.kSpecializedSemanticVariant",
+                "from": "閒",
+                "to": "間"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "阝",
@@ -3505,7 +5346,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "鞒",
@@ -3524,10 +5365,25 @@
                 "to": "橇"
               }
             ]
+          },
+          {
+            "target": "橇",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "鞒",
+                "to": "鞽"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "鞽",
+                "to": "橇"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "须",
@@ -3536,9 +5392,29 @@
             "target": "須",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "须",
+                "to": "須"
+              }
+            ]
+          },
+          {
+            "target": "須",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "须",
                 "to": "須"
+              }
+            ]
+          },
+          {
+            "target": "鬚",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "须",
+                "to": "鬚"
               }
             ]
           },
@@ -3554,7 +5430,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "饣",
@@ -3573,10 +5449,25 @@
                 "to": "食"
               }
             ]
+          },
+          {
+            "target": "食",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "饣",
+                "to": "飠"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "飠",
+                "to": "食"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "rejected"
       },
       {
         "character": "饥",
@@ -3585,9 +5476,59 @@
             "target": "飢",
             "path": [
               {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "饥",
+                "to": "飢"
+              }
+            ]
+          },
+          {
+            "target": "飢",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "饥",
+                "to": "饑"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "饑",
+                "to": "飢"
+              }
+            ]
+          },
+          {
+            "target": "飢",
+            "path": [
+              {
                 "kind": "Unihan.kTraditionalVariant",
                 "from": "饥",
                 "to": "飢"
+              }
+            ]
+          },
+          {
+            "target": "饑",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "饥",
+                "to": "飢"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "飢",
+                "to": "饑"
+              }
+            ]
+          },
+          {
+            "target": "饑",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "饥",
+                "to": "饑"
               }
             ]
           },
@@ -3603,7 +5544,7 @@
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       },
       {
         "character": "鱿",
@@ -3622,10 +5563,25 @@
                 "to": "鰌"
               }
             ]
+          },
+          {
+            "target": "鰌",
+            "path": [
+              {
+                "kind": "OpenCC.STCharacters.candidate",
+                "from": "鱿",
+                "to": "魷"
+              },
+              {
+                "kind": "Unihan.kSemanticVariant",
+                "from": "魷",
+                "to": "鰌"
+              }
+            ]
           }
         ],
         "adobe_exact_glyph": null,
-        "status": "需逐字审核，禁止仅凭相似、同音或局部词义复用"
+        "status": "insufficient"
       }
     ]
   },
@@ -4287,6 +6243,32 @@
       "basis": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
     },
     {
+      "character": "倘",
+      "codepoint": "U+5018",
+      "candidates": [],
+      "target": "儻",
+      "target_codepoint": "U+513B",
+      "glyph": "cid04207",
+      "basis": "儻词条明确同倘；按字典同字关系采用。",
+      "dictionary_evidence": {
+        "target": "儻",
+        "path": [
+          {
+            "kind": "Unihan.kSemanticVariant",
+            "from": "倘",
+            "to": "儻"
+          }
+        ],
+        "traditional_candidates": [],
+        "reason": "儻词条明确同倘；按字典同字关系采用。",
+        "sources": [
+          "https://stroke-order.learningweb.moe.edu.tw/dictMean.jsp?ID=20795&la=0"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
+    },
+    {
       "character": "债",
       "codepoint": "U+503A",
       "candidates": [
@@ -4803,6 +6785,38 @@
       "basis": "OpenCC STCharacters unique"
     },
     {
+      "character": "勋",
+      "codepoint": "U+52CB",
+      "candidates": [
+        "勳",
+        "勛"
+      ],
+      "target": "勳",
+      "target_codepoint": "U+52F3",
+      "glyph": "cid04291",
+      "basis": "官方规范字对照列勳与勛；两候选为功勋同字写法。",
+      "dictionary_evidence": {
+        "target": "勳",
+        "path": [
+          {
+            "kind": "OpenCC.STCharacters.candidate",
+            "from": "勋",
+            "to": "勳"
+          }
+        ],
+        "traditional_candidates": [
+          "勳",
+          "勛"
+        ],
+        "reason": "官方规范字对照列勳与勛；两候选为功勋同字写法。",
+        "sources": [
+          "https://language.moe.gov.tw/001/Upload/files/SITE_CONTENT/M0001/CDBOOK/charpt2-23.html"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
+    },
+    {
       "character": "勖",
       "codepoint": "U+52D6",
       "candidates": [],
@@ -5205,6 +7219,38 @@
       "basis": "OpenCC STCharacters unique"
     },
     {
+      "character": "哗",
+      "codepoint": "U+54D7",
+      "candidates": [
+        "譁",
+        "嘩"
+      ],
+      "target": "嘩",
+      "target_codepoint": "U+5629",
+      "glyph": "cid01374",
+      "basis": "嘩、譁为喧哗异体；选择口旁嘩以保留口部写法。",
+      "dictionary_evidence": {
+        "target": "嘩",
+        "path": [
+          {
+            "kind": "Unihan.kTraditionalVariant",
+            "from": "哗",
+            "to": "嘩"
+          }
+        ],
+        "traditional_candidates": [
+          "譁",
+          "嘩"
+        ],
+        "reason": "嘩、譁为喧哗异体；选择口旁嘩以保留口部写法。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=42216&la=1"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
+    },
+    {
       "character": "唤",
       "codepoint": "U+5524",
       "candidates": [
@@ -5247,6 +7293,38 @@
       "target_codepoint": "U+56C0",
       "glyph": "cid04454",
       "basis": "OpenCC STCharacters unique"
+    },
+    {
+      "character": "啮",
+      "codepoint": "U+556E",
+      "candidates": [
+        "齧",
+        "嚙"
+      ],
+      "target": "嚙",
+      "target_codepoint": "U+5699",
+      "glyph": "cid07654",
+      "basis": "教育部异体字资料将嚙归入齧；两个繁体候选属于咬啮同字写法。",
+      "dictionary_evidence": {
+        "target": "嚙",
+        "path": [
+          {
+            "kind": "Unihan.kTraditionalVariant",
+            "from": "啮",
+            "to": "嚙"
+          }
+        ],
+        "traditional_candidates": [
+          "齧",
+          "嚙"
+        ],
+        "reason": "教育部异体字资料将嚙归入齧；两个繁体候选属于咬啮同字写法。",
+        "sources": [
+          "https://pedia.cloud.edu.tw/Entry/Detail?title=%E5%9A%99"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
     },
     {
       "character": "啸",
@@ -5726,6 +7804,32 @@
       "basis": "OpenCC 明确收录的日文新旧或异体字形对应；保留原文本码点，采用日式字形"
     },
     {
+      "character": "姬",
+      "codepoint": "U+59EC",
+      "candidates": [],
+      "target": "姫",
+      "target_codepoint": "U+59EB",
+      "glyph": "cid03491",
+      "basis": "词条明确将姫列为姬的异体；采用其姬字用法，不把姫的其他读音当作输入含义。",
+      "dictionary_evidence": {
+        "target": "姫",
+        "path": [
+          {
+            "kind": "OpenCC.JPShinjitaiCharacters.reverse",
+            "from": "姬",
+            "to": "姫"
+          }
+        ],
+        "traditional_candidates": [],
+        "reason": "词条明确将姫列为姬的异体；采用其姬字用法，不把姫的其他读音当作输入含义。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=9979&la=1"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
+    },
+    {
       "character": "娄",
       "codepoint": "U+5A04",
       "candidates": [
@@ -5764,6 +7868,38 @@
       "target_codepoint": "U+5A2F",
       "glyph": "cid01944",
       "basis": "Unicode 标注同一抽象字形的重复编码关系；乡先经唯一繁体鄉"
+    },
+    {
+      "character": "娴",
+      "codepoint": "U+5A34",
+      "candidates": [
+        "嫺",
+        "嫻"
+      ],
+      "target": "嫻",
+      "target_codepoint": "U+5AFB",
+      "glyph": "cid04598",
+      "basis": "嫺与嫻为异体关系；OpenCC 两候选为同字写法，选择已有嫻。",
+      "dictionary_evidence": {
+        "target": "嫻",
+        "path": [
+          {
+            "kind": "Unihan.kTraditionalVariant",
+            "from": "娴",
+            "to": "嫻"
+          }
+        ],
+        "traditional_candidates": [
+          "嫺",
+          "嫻"
+        ],
+        "reason": "嫺与嫻为异体关系；OpenCC 两候选为同字写法，选择已有嫻。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=10240&la=1"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
     },
     {
       "character": "婴",
@@ -8298,6 +10434,32 @@
       "basis": "OpenCC STCharacters unique"
     },
     {
+      "character": "沲",
+      "codepoint": "U+6CB2",
+      "candidates": [],
+      "target": "沱",
+      "target_codepoint": "U+6CB1",
+      "glyph": "cid05404",
+      "basis": "研订将沲认定为沱的异体。",
+      "dictionary_evidence": {
+        "target": "沱",
+        "path": [
+          {
+            "kind": "Unihan.kSemanticVariant",
+            "from": "沲",
+            "to": "沱"
+          }
+        ],
+        "traditional_candidates": [],
+        "reason": "研订将沲认定为沱的异体。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-23487&la=1"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
+    },
+    {
       "character": "泞",
       "codepoint": "U+6CDE",
       "candidates": [
@@ -10727,6 +12889,41 @@
       "basis": "OpenCC STCharacters unique"
     },
     {
+      "character": "绔",
+      "codepoint": "U+7ED4",
+      "candidates": [
+        "絝"
+      ],
+      "target": "袴",
+      "target_codepoint": "U+88B4",
+      "glyph": "cid01927",
+      "basis": "唯一繁体絝经研订归入袴、褲的裤子异体系统。",
+      "dictionary_evidence": {
+        "target": "袴",
+        "path": [
+          {
+            "kind": "OpenCC.STCharacters",
+            "from": "绔",
+            "to": "絝"
+          },
+          {
+            "kind": "Unihan.kSemanticVariant",
+            "from": "絝",
+            "to": "袴"
+          }
+        ],
+        "traditional_candidates": [
+          "絝"
+        ],
+        "reason": "唯一繁体絝经研订归入袴、褲的裤子异体系统。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-40844"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
+    },
+    {
       "character": "绕",
       "codepoint": "U+7ED5",
       "candidates": [
@@ -11018,6 +13215,38 @@
       "target_codepoint": "U+7DAC",
       "glyph": "cid02342",
       "basis": "OpenCC STCharacters unique"
+    },
+    {
+      "character": "绷",
+      "codepoint": "U+7EF7",
+      "candidates": [
+        "繃",
+        "綳"
+      ],
+      "target": "繃",
+      "target_codepoint": "U+7E43",
+      "glyph": "cid06125",
+      "basis": "研订将綳归为繃的异体，列出的多读音未形成需要选词的两种字。",
+      "dictionary_evidence": {
+        "target": "繃",
+        "path": [
+          {
+            "kind": "Unihan.kTraditionalVariant",
+            "from": "绷",
+            "to": "繃"
+          }
+        ],
+        "traditional_candidates": [
+          "繃",
+          "綳"
+        ],
+        "reason": "研订将綳归为繃的异体，列出的多读音未形成需要选词的两种字。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=-33799&la=0&powerMode=2"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
     },
     {
       "character": "绸",
@@ -11883,6 +14112,32 @@
       "basis": "OpenCC STCharacters unique"
     },
     {
+      "character": "舡",
+      "codepoint": "U+8221",
+      "candidates": [],
+      "target": "船",
+      "target_codepoint": "U+8239",
+      "glyph": "cid02727",
+      "basis": "舡词条释义为船；复用同义船字形。",
+      "dictionary_evidence": {
+        "target": "船",
+        "path": [
+          {
+            "kind": "Unihan.kSemanticVariant",
+            "from": "舡",
+            "to": "船"
+          }
+        ],
+        "traditional_candidates": [],
+        "reason": "舡词条释义为船；复用同义船字形。",
+        "sources": [
+          "https://dict.revised.moe.edu.tw/dictView.jsp?ID=7202&la=1&powerMode=0"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
+    },
+    {
       "character": "舣",
       "codepoint": "U+8223",
       "candidates": [
@@ -11936,6 +14191,38 @@
       "target_codepoint": "U+8271",
       "glyph": "cid06320",
       "basis": "OpenCC STCharacters unique"
+    },
+    {
+      "character": "艳",
+      "codepoint": "U+8273",
+      "candidates": [
+        "豔",
+        "艷"
+      ],
+      "target": "艷",
+      "target_codepoint": "U+8277",
+      "glyph": "cid06321",
+      "basis": "豔词条同时收艳、艷为异体，属于形体差异。",
+      "dictionary_evidence": {
+        "target": "艷",
+        "path": [
+          {
+            "kind": "Unihan.kTraditionalVariant",
+            "from": "艳",
+            "to": "艷"
+          }
+        ],
+        "traditional_candidates": [
+          "豔",
+          "艷"
+        ],
+        "reason": "豔词条同时收艳、艷为异体，属于形体差异。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=42590&la=1"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
     },
     {
       "character": "艺",
@@ -12326,6 +14613,32 @@
       "target_codepoint": "U+85A9",
       "glyph": "cid02165",
       "basis": "OpenCC STCharacters unique"
+    },
+    {
+      "character": "葚",
+      "codepoint": "U+845A",
+      "candidates": [],
+      "target": "椹",
+      "target_codepoint": "U+6939",
+      "glyph": "cid05244",
+      "basis": "桑葚的葚明确亦作椹；两读音均指桑实。",
+      "dictionary_evidence": {
+        "target": "椹",
+        "path": [
+          {
+            "kind": "Unihan.kSemanticVariant",
+            "from": "葚",
+            "to": "椹"
+          }
+        ],
+        "traditional_candidates": [],
+        "reason": "桑葚的葚明确亦作椹；两读音均指桑实。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=68741"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
     },
     {
       "character": "蓝",
@@ -14838,6 +17151,38 @@
       "basis": "OpenCC STCharacters unique"
     },
     {
+      "character": "赝",
+      "codepoint": "U+8D5D",
+      "candidates": [
+        "贗",
+        "贋"
+      ],
+      "target": "贋",
+      "target_codepoint": "U+8D0B",
+      "glyph": "cid01570",
+      "basis": "贋明确为贗的异体；两候选同指伪造。",
+      "dictionary_evidence": {
+        "target": "贋",
+        "path": [
+          {
+            "kind": "Unihan.kTraditionalVariant",
+            "from": "赝",
+            "to": "贋"
+          }
+        ],
+        "traditional_candidates": [
+          "贗",
+          "贋"
+        ],
+        "reason": "贋明确为贗的异体；两候选同指伪造。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=43454&la=0"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
+    },
+    {
       "character": "赠",
       "codepoint": "U+8D60",
       "candidates": [
@@ -14968,6 +17313,32 @@
       "target_codepoint": "U+8E91",
       "glyph": "cid06837",
       "basis": "OpenCC STCharacters unique"
+    },
+    {
+      "character": "蹋",
+      "codepoint": "U+8E4B",
+      "candidates": [],
+      "target": "踏",
+      "target_codepoint": "U+8E0F",
+      "glyph": "cid03199",
+      "basis": "比较正文说明蹋同踏，糟蹋亦作糟踏；采用该异体关系。",
+      "dictionary_evidence": {
+        "target": "踏",
+        "path": [
+          {
+            "kind": "Unihan.kSemanticVariant",
+            "from": "蹋",
+            "to": "踏"
+          }
+        ],
+        "traditional_candidates": [],
+        "reason": "比较正文说明蹋同踏，糟蹋亦作糟踏；采用该异体关系。",
+        "sources": [
+          "https://chardb.iis.sinica.edu.tw/meancompare/8E0F/8E4B"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
     },
     {
       "character": "蹑",
@@ -16878,6 +19249,38 @@
       "target_codepoint": "U+9419",
       "glyph": "cid03202",
       "basis": "OpenCC STCharacters unique"
+    },
+    {
+      "character": "镰",
+      "codepoint": "U+9570",
+      "candidates": [
+        "鐮",
+        "鎌"
+      ],
+      "target": "鎌",
+      "target_codepoint": "U+938C",
+      "glyph": "cid01495",
+      "basis": "鐮的镰刀用法可写鎌；目标另有古义不改变输入镰的含义。",
+      "dictionary_evidence": {
+        "target": "鎌",
+        "path": [
+          {
+            "kind": "OpenCC.STCharacters.candidate",
+            "from": "镰",
+            "to": "鎌"
+          }
+        ],
+        "traditional_candidates": [
+          "鐮",
+          "鎌"
+        ],
+        "reason": "鐮的镰刀用法可写鎌；目标另有古义不改变输入镰的含义。",
+        "sources": [
+          "https://dict.variants.moe.edu.tw/dictView.jsp?ID=74072&la=0"
+        ],
+        "decision": "approved",
+        "review_date": "2026-09-15"
+      }
     },
     {
       "character": "长",
@@ -20052,14 +22455,6 @@
       ]
     },
     {
-      "character": "勋",
-      "codepoint": "U+52CB",
-      "candidates": [
-        "勳",
-        "勛"
-      ]
-    },
-    {
       "character": "卤",
       "codepoint": "U+5364",
       "candidates": [
@@ -20097,22 +22492,6 @@
       "candidates": [
         "吣",
         "唚"
-      ]
-    },
-    {
-      "character": "哗",
-      "codepoint": "U+54D7",
-      "candidates": [
-        "譁",
-        "嘩"
-      ]
-    },
-    {
-      "character": "啮",
-      "codepoint": "U+556E",
-      "candidates": [
-        "齧",
-        "嚙"
       ]
     },
     {
@@ -20178,14 +22557,6 @@
       "candidates": [
         "夾",
         "袷"
-      ]
-    },
-    {
-      "character": "娴",
-      "codepoint": "U+5A34",
-      "candidates": [
-        "嫺",
-        "嫻"
       ]
     },
     {
@@ -20384,14 +22755,6 @@
       ]
     },
     {
-      "character": "绷",
-      "codepoint": "U+7EF7",
-      "candidates": [
-        "繃",
-        "綳"
-      ]
-    },
-    {
       "character": "胜",
       "codepoint": "U+80DC",
       "candidates": [
@@ -20429,14 +22792,6 @@
       "candidates": [
         "羶",
         "膻"
-      ]
-    },
-    {
-      "character": "艳",
-      "codepoint": "U+8273",
-      "candidates": [
-        "豔",
-        "艷"
       ]
     },
     {
@@ -20526,14 +22881,6 @@
       "candidates": [
         "諡",
         "謚"
-      ]
-    },
-    {
-      "character": "赝",
-      "codepoint": "U+8D5D",
-      "candidates": [
-        "贗",
-        "贋"
       ]
     },
     {
@@ -20647,14 +22994,6 @@
       "candidates": [
         "钁",
         "鐝"
-      ]
-    },
-    {
-      "character": "镰",
-      "codepoint": "U+9570",
-      "candidates": [
-        "鐮",
-        "鎌"
       ]
     },
     {
@@ -20892,11 +23231,6 @@
     {
       "character": "倌",
       "codepoint": "U+500C",
-      "candidates": []
-    },
-    {
-      "character": "倘",
-      "codepoint": "U+5018",
       "candidates": []
     },
     {
@@ -22403,11 +24737,6 @@
     {
       "character": "姣",
       "codepoint": "U+59E3",
-      "candidates": []
-    },
-    {
-      "character": "姬",
-      "codepoint": "U+59EC",
       "candidates": []
     },
     {
@@ -24378,11 +26707,6 @@
     {
       "character": "沭",
       "codepoint": "U+6CAD",
-      "candidates": []
-    },
-    {
-      "character": "沲",
-      "codepoint": "U+6CB2",
       "candidates": []
     },
     {
@@ -26513,13 +28837,6 @@
       ]
     },
     {
-      "character": "绔",
-      "codepoint": "U+7ED4",
-      "candidates": [
-        "絝"
-      ]
-    },
-    {
       "character": "绠",
       "codepoint": "U+7EE0",
       "candidates": [
@@ -27065,11 +29382,6 @@
       "candidates": []
     },
     {
-      "character": "舡",
-      "codepoint": "U+8221",
-      "candidates": []
-    },
-    {
       "character": "舢",
       "codepoint": "U+8222",
       "candidates": []
@@ -27557,11 +29869,6 @@
     {
       "character": "葙",
       "codepoint": "U+8459",
-      "candidates": []
-    },
-    {
-      "character": "葚",
-      "codepoint": "U+845A",
       "candidates": []
     },
     {
@@ -28600,11 +30907,6 @@
     {
       "character": "蹁",
       "codepoint": "U+8E41",
-      "candidates": []
-    },
-    {
-      "character": "蹋",
-      "codepoint": "U+8E4B",
       "candidates": []
     },
     {

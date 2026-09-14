@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from axis_variants import routes, unihan, adobe_map
+from axis_variants import routes, full_routes, unihan, adobe_map
 from fontTools.ttLib import TTFont
 from fontTools.ttLib.tables.DefaultTable import DefaultTable
 
@@ -39,9 +39,10 @@ def gb2312_hanzi():
     return sorted(chars, key=ord)
 
 
-def plan(cmap, simplified, japanese, reviewed, variants=None, unicode=None):
+def plan(cmap, simplified, japanese, reviewed, variants=None, unicode=None, dictionary_reviews=None):
     variants = variants or {}
     unicode = unicode or {}
+    dictionary_reviews = dictionary_reviews or {}
     aliases, ambiguous, unavailable = [], [], []
     for char in gb2312_hanzi():
         if ord(char) in cmap:
@@ -49,6 +50,20 @@ def plan(cmap, simplified, japanese, reviewed, variants=None, unicode=None):
         candidates = simplified.get(char, [])
         row = {'character': char, 'codepoint': f'U+{ord(char):04X}',
                'candidates': candidates}
+        if char in dictionary_reviews:
+            review = dictionary_reviews[char]
+            choice = {'target': review.get('target'), 'path': review.get('path')}
+            if (review.get('decision') != 'approved'
+                    or review.get('traditional_candidates') != candidates
+                    or not review.get('sources') or not review.get('reason')
+                    or choice not in full_routes(char, cmap, simplified, japanese, unicode)
+                    or any('Specialized' in e['kind'] for e in review['path'])):
+                raise ValueError(f'字典审核记录与候选或证据要求不符: {char}')
+            target = review['target']
+            aliases.append(dict(row, target=target, target_codepoint=f'U+{ord(target):04X}',
+                                glyph=cmap[ord(target)], basis=review['reason'],
+                                dictionary_evidence=review))
+            continue
         if char in variants and len(candidates) > 1:
             raise ValueError(f'禁止覆盖简繁歧义: {char}')
         if len(candidates) > 1:
@@ -85,6 +100,8 @@ def plan(cmap, simplified, japanese, reviewed, variants=None, unicode=None):
     applied = {row['character'] for row in aliases if 'evidence' in row}
     if applied != set(variants):
         raise ValueError('审核表含已存在、重复或未生效的映射')
+    if {r['character'] for r in aliases if 'dictionary_evidence' in r} != set(dictionary_reviews):
+        raise ValueError('字典审核表含已存在或未生效的映射')
     return aliases, ambiguous, unavailable
 
 
@@ -98,22 +115,26 @@ def build(output=OUTPUT, report=REPORT):
     japanese = dictionary(DATA / 'JPShinjitaiCharacters.txt')
     unicode = unihan()
     variants = json.loads((DATA / 'reviewed-variants.json').read_text(encoding='utf-8'))
+    dictionary_reviews = json.loads((DATA / 'reviewed-dictionary.json').read_text(encoding='utf-8'))
+    from axis_full_audit import audit
+    full_audit = audit(original, simplified, japanese, unicode, variants, dictionary_reviews)
     aliases, ambiguous, unavailable = plan(
         original, simplified, japanese,
         json.loads((DATA / 'reviewed-japanese.json').read_text(encoding='utf-8')),
-        variants, unicode)
+        variants, unicode, dictionary_reviews)
     # 对剩余字保留全部检索到的候选，但不因有候选就自动采用。
     cmap = adobe_map()
     glyphs = set(font.getGlyphOrder())
+    decisions = {row['character']: row['decision'] for row in full_audit['characters']}
     pending = []
     for row in sorted(ambiguous + unavailable, key=lambda row: row['codepoint']):
         char = row['character']
-        options = routes(char, original, simplified, japanese, unicode)
+        options = full_routes(char, original, simplified, japanese, unicode)
         exact = cmap.get(ord(char))
         if options or exact in glyphs:
             pending.append({'character': char, 'candidates': options,
                             'adobe_exact_glyph': exact if exact in glyphs else None,
-                            'status': '需逐字审核，禁止仅凭相似、同音或局部词义复用'})
+                            'status': decisions[char]})
     # FontTools 可让多个子表共享同一个 cmap 字典；先全部复制再修改。
     for table in font['cmap'].tables:
         table.cmap = dict(table.cmap)
@@ -125,7 +146,7 @@ def build(output=OUTPUT, report=REPORT):
                     raise ValueError(f'禁止覆盖原有映射: {row["character"]}')
                 table.cmap[cp] = row['glyph']
     names = {1: 'AXIS CJK Reuse', 2: 'Regular',
-             3: 'AXIS-CJK-Reuse-1.1-' + digest[:12],
+             3: 'AXIS-CJK-Reuse-1.2-' + digest[:12],
              4: 'AXIS CJK Reuse Regular', 6: 'AxisCJKReuse-Regular',
              16: 'AXIS CJK Reuse', 17: 'Regular', 18: 'AXIS CJK Reuse Regular'}
     # 使用独立字体身份；版权、商标等原始元数据保持不变。
@@ -148,13 +169,15 @@ def build(output=OUTPUT, report=REPORT):
         'dictionary_sha256': {name: hashlib.sha256((DATA / name).read_bytes()).hexdigest()
                               for name in ('STCharacters.txt', 'JPShinjitaiCharacters.txt',
                                            'reviewed-japanese.json', 'reviewed-variants.json',
-                                           'Unihan_Variants.txt', 'UniJIS-UTF32-H')},
+                                           'Unihan_Variants.txt', 'UniJIS-UTF32-H',
+                                           'reviewed-dictionary.json', 'dictionary-audit-decisions.json')},
         'scope': 'GB2312 6763 Han characters; original mappings preserved',
         'counts': {'total': 6763,
                    'original_covered': 6763 - len(aliases) - len(ambiguous) - len(unavailable),
                    'added': len(aliases),
                    'covered_after': 6763 - len(ambiguous) - len(unavailable),
                    'ambiguous': len(ambiguous), 'unresolved_no_approved_mapping': len(unavailable)},
+        'full_audit_counts': full_audit['counts'],
         'audit': {'unihan_version': '17.0.0',
                   'adobe_commit': 'f5cf3bca7fdfeaceb77aa82847e974f2306c20b4',
                   'adobe_exact_remaining': sum(r['adobe_exact_glyph'] is not None for r in pending),
@@ -165,6 +188,8 @@ def build(output=OUTPUT, report=REPORT):
         'aliases': aliases, 'ambiguous': ambiguous, 'unavailable': unavailable,
     }
     report.parent.mkdir(parents=True, exist_ok=True)
+    from axis_full_audit import write_audit
+    write_audit(full_audit, report.parent)
     report.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     missing_chars = sorted(row['character'] for row in ambiguous + unavailable)
     (report.parent / 'axis-missing-30.txt').write_text(

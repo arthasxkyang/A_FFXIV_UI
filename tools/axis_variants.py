@@ -61,3 +61,18 @@ def adobe_map():
     if len(result) < 15000:
         raise ValueError('Adobe CMap 不完整或解析异常')
     return result
+
+
+def full_routes(char, cmap, simplified, japanese, unicode):
+    """穷举一跳繁体加一跳异体，包含多繁候选，但不作采用决定。"""
+    options = routes(char, cmap, simplified, japanese, unicode)
+    for traditional in simplified.get(char, []):
+        if traditional == char:
+            continue
+        edge = {'kind': 'OpenCC.STCharacters.candidate',
+                'from': char, 'to': traditional}
+        if ord(traditional) in cmap:
+            options.append({'target': traditional, 'path': [edge]})
+        for option in routes(traditional, cmap, {}, japanese, unicode):
+            options.append({'target': option['target'], 'path': [edge] + option['path']})
+    return sorted(options, key=lambda r: (r['target'], str(r['path'])))
