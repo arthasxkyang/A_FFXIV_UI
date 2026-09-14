@@ -1,2 +1,7 @@
 # Ignore rider IDE files
 .idea/*
+# 本地生成字体：核实修改分发许可前不纳入发布。
+Media/Fonts/AxisRegular-CJKReuse.ttf
+__pycache__/
+.venv-fonts/
+docs/fonts/axis-preview.png

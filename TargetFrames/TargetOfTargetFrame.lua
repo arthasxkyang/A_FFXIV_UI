@@ -1,3 +1,4 @@
+local _, ns = ...
 
 local targetFrame = CreateFrame("Frame", nil, UIParent)
 local f = targetFrame
@@ -71,7 +72,7 @@ outline:SetVertexColor(unpack(COLORS.neutral))
 
 
 local nameText = outlineFrame:CreateFontString(nil, "OVERLAY")
-nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", 20)
+ns.ApplyTextFont(nameText, "Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", 20)
 nameText:SetPoint("LEFT", outlineFrame, "LEFT", 220, 16)
 nameText:SetJustifyH("LEFT")
 nameText:SetDrawLayer("OVERLAY", 7)

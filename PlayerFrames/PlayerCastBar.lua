@@ -1,3 +1,4 @@
+local _, ns = ...
 local addonID, addonEnv = ...
 
 local SCALE = 100
@@ -59,7 +60,7 @@ if Masque then
 end
 
 local spellText = outlineFrame:CreateFontString(nil, "OVERLAY")
-spellText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisRegular.ttf", s(18))
+ns.ApplyTextFont(spellText, "Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisRegular.ttf", s(18))
 spellText:SetPoint("LEFT", outlineFrame, "LEFT", s(3), s(15))
 spellText:SetJustifyH("RIGHT")
 spellText:SetDrawLayer("OVERLAY", 7)

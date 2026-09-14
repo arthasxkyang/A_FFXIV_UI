@@ -1,4 +1,5 @@
-﻿hooksecurefunc(PlayerFrame, "Show", function(self)
+local _, ns = ...
+hooksecurefunc(PlayerFrame, "Show", function(self)
     self:SetAlpha(0)
 end)
 
@@ -60,7 +61,7 @@ hpLabel:SetShadowColor(0.8196, 0.7804, 0.6980)
 hpLabel:SetShadowOffset(0, -1)
 
 local nameText = outlineFrame:CreateFontString(nil, "OVERLAY")
-nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\EurostileExtended.ttf", s(20))
+ns.ApplyTextFont(nameText, "Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\EurostileExtended.ttf", s(20))
 nameText:SetPoint("RIGHT", outlineFrame, "RIGHT", -10, s(10))
 nameText:SetJustifyH("RIGHT")
 nameText:SetDrawLayer("OVERLAY", 7)

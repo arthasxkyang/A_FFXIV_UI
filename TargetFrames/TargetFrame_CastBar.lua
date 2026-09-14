@@ -1,4 +1,5 @@
-﻿--print("FFXIV UI Target Cast Bar with Interrupt GIF loaded")
+local _, ns = ...
+--print("FFXIV UI Target Cast Bar with Interrupt GIF loaded")
 
 local SCALE = 103
 local function s(x) return x * SCALE / 100 end
@@ -42,7 +43,7 @@ textFrame:SetAllPoints()
 textFrame:SetFrameLevel(outlineFrame:GetFrameLevel() + 1)
 
 local text = textFrame:CreateFontString(nil, "OVERLAY")
-text:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", s(20))
+ns.ApplyTextFont(text, "Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", s(20))
 text:SetPoint("RIGHT", castBar, "RIGHT", 0, -s(4))
 text:SetShadowOffset(0, -1)
 text:SetShadowColor(0.631, 0.514, 0.318, 1)

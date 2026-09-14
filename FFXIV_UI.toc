@@ -9,6 +9,7 @@
 ## IconTexture: Interface\AddOns\FFXIV_UI\Media\Textures\Icon
 
  
+General/Fonts.lua
 General/FFXIV_UI_Menu.lua
 General/ExperienceBar.lua
 General/EventText.lua

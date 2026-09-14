@@ -1,0 +1,7 @@
+{
+  "击": {"traditional": "擊", "target": "撃", "reason": "擊的日文新字体撃，复用击打义字形"},
+  "岁": {"traditional": "歲", "target": "歳", "reason": "歲的日文新字体歳"},
+  "缘": {"traditional": "緣", "target": "縁", "reason": "緣的日文新字体縁"},
+  "说": {"traditional": "說", "target": "説", "reason": "說的日文字形説"},
+  "阅": {"traditional": "閱", "target": "閲", "reason": "閱的日文字形閲"}
+}

@@ -1,3 +1,4 @@
+local _, ns = ...
 
 --print("FFXIV UI Target Frame loaded")
 
@@ -83,7 +84,7 @@ levelText:SetDrawLayer("OVERLAY", 7)
 levelText:SetShadowOffset(1, -1)
 
 local nameText = outlineFrame:CreateFontString(nil, "OVERLAY")
-nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", s(20))
+ns.ApplyTextFont(nameText, "Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", s(20))
 nameText:SetPoint("LEFT", levelText, "RIGHT", s(5), s(2))
 nameText:SetJustifyH("LEFT")
 nameText:SetDrawLayer("OVERLAY", 7)
