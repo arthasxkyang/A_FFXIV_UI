@@ -181,10 +181,11 @@ class LuaTests(unittest.TestCase):
 
     def test_locale_selection_failure_fallback_and_warning(self):
         for locale, failing, expected in (
-            ('zhCN', [], ['reuse']), ('zhTW', [], ['reuse']),
+            ('zhCN', [], ['drawn']), ('zhTW', [], ['drawn']),
+            ('zhCN', ['drawn'], ['drawn', 'reuse']),
             ('enUS', [], ['original']), ('jaJP', [], ['original']),
-            ('zhCN', ['reuse'], ['reuse', 'standard']),
-            ('zhCN', ['reuse', 'standard'], ['reuse', 'standard', 'original']),
+            ('zhCN', ['drawn', 'reuse'], ['drawn', 'reuse', 'standard']),
+            ('zhCN', ['drawn', 'reuse', 'standard'], ['drawn', 'reuse', 'standard', 'original']),
         ):
             with self.subTest(locale=locale, failing=failing):
                 lua = self.runtime()
@@ -194,7 +195,8 @@ class LuaTests(unittest.TestCase):
                 lua.globals().print = lambda text: warnings.append(text)
                 ns, fs = lua.table(), lua.table()
                 def set_font(_self, path, size, flags):
-                    kind = 'reuse' if path.endswith('AxisRegular-CJKReuse.ttf') else path
+                    kind = ('drawn' if path.endswith('AxisRegular-CJKDrawn.ttf') else
+                            'reuse' if path.endswith('AxisRegular-CJKReuse.ttf') else path)
                     calls.append(kind)
                     self.assertEqual(size, 20)
                     self.assertEqual(flags, 'OUTLINE')
