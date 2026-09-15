@@ -84,14 +84,14 @@
   
         visual.nameText = visual:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
         visual.nameText:SetPoint("TOPLEFT", visual, 4, -4)
-        visual.nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisRegular.ttf", 14, "OUTLINE")
+        visual.nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-65-Medium.otf", 14, "OUTLINE")
         visual.nameText:SetTextColor(1,1,1)
         visual.nameText:SetText(data.label)
 
 
         visual.percentText = visual:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
         visual.percentText:SetPoint("TOPRIGHT", visual, -4, -4)
-        visual.percentText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisRegular.ttf", 14, "OUTLINE")
+        visual.percentText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-65-Medium.otf", 14, "OUTLINE")
         visual.percentText:SetTextColor(1,1,1)
         visual.percentText:SetText("100%")
 
@@ -275,7 +275,7 @@ end)
 local cb = CreateFrame("CheckButton", "FFXIV_UI_SoundCheck", options, "InterfaceOptionsCheckButtonTemplate")
 cb:SetPoint("TOPLEFT", reset, "BOTTOMLEFT", 0, -16)
 cb.Text:SetText("Enable Sound Effects")
-cb.Text:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisRegular.ttf", 12)
+cb.Text:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-65-Medium.otf", 12)
 
 cb:SetScript("OnShow", function(self)
     self:SetChecked(FFXIV_UI_DB.sfxEnabled)
@@ -290,7 +290,7 @@ FFXIV_UI_DB.errorSfxEnabled = FFXIV_UI_DB.errorSfxEnabled ~= false
 local errorCB = CreateFrame("CheckButton", "FFXIV_UI_ErrorSoundCheck", options, "InterfaceOptionsCheckButtonTemplate")
 errorCB:SetPoint("TOPLEFT", cb, "BOTTOMLEFT", 0, -8)
 errorCB.Text:SetText("Enable Error Sound")
-errorCB.Text:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisRegular.ttf", 12)
+errorCB.Text:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-65-Medium.otf", 12)
 
 errorCB:SetScript("OnShow", function(self)
     self:SetChecked(FFXIV_UI_DB.errorSfxEnabled)

@@ -69,7 +69,7 @@ local function InitializeAuraSlot(slot)
     slot:SetApplicationCount(slot.stackText)
 
     slot.cooldownText = overlay:CreateFontString(nil, "OVERLAY")
-    slot.cooldownText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", s(14))
+    slot.cooldownText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", s(14))
     slot.cooldownText:SetPoint("CENTER", overlay, "CENTER", 0, s(-20))
 
     slot:SetDurationText(slot.cooldownText, {

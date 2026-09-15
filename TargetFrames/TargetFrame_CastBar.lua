@@ -42,7 +42,7 @@ textFrame:SetAllPoints()
 textFrame:SetFrameLevel(outlineFrame:GetFrameLevel() + 1)
 
 local text = textFrame:CreateFontString(nil, "OVERLAY")
-text:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", s(20))
+text:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", s(20))
 text:SetPoint("RIGHT", castBar, "RIGHT", 0, -s(4))
 text:SetShadowOffset(0, -1)
 text:SetShadowColor(0.631, 0.514, 0.318, 1)

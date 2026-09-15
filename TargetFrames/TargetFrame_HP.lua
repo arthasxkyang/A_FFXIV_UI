@@ -83,7 +83,7 @@ levelText:SetDrawLayer("OVERLAY", 7)
 levelText:SetShadowOffset(1, -1)
 
 local nameText = outlineFrame:CreateFontString(nil, "OVERLAY")
-nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", s(20))
+nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", s(20))
 nameText:SetPoint("LEFT", levelText, "RIGHT", s(5), s(2))
 nameText:SetJustifyH("LEFT")
 nameText:SetDrawLayer("OVERLAY", 7)
@@ -91,7 +91,7 @@ nameText:SetShadowOffset(1, -1)
 
 
 local hpPercentText = outlineFrame:CreateFontString(nil, "OVERLAY")
-hpPercentText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", s(16))
+hpPercentText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", s(16))
 hpPercentText:SetPoint("LEFT", outlineFrame, "LEFT", s(5), s(16))
 hpPercentText:SetJustifyH("LEFT")
 hpPercentText:SetDrawLayer("OVERLAY", 7)
