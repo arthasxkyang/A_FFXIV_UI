@@ -14,7 +14,7 @@ If you like what I do, consider supporting me: https://ko-fi.com/mojithemonk
 
 ## 中文字形复用（开发中）
 
-中文客户端的名称与施法文本优先使用本地生成的 `AxisRegular-CJKDrawn.ttf`：在原 AXIS 字形复用基础上，为常用一简多繁缺字新增 61 个简体轮廓。一级常用字覆盖 3,237/3,500（92.49%），仍缺 263 字；GB2312 仍缺 1,847 字。绘制方法和验收边界见 [简体补绘说明](docs/fonts/axis-simplified-drawing.md)。生成字体未随仓库分发；文件加载失败时依次尝试旧复用版和客户端字体。
+中文客户端的名称与施法文本支持本地生成的 `AxisRegular-CJKReuse.ttf`，复用原 AXIS 字体中的繁体/日式字形补充 1,470 个简体码点。显示可能简繁混排，GB2312 仍有 1,908 个字未覆盖。生成字体未随仓库分发；缺少文件时尝试客户端默认字体。
 
 安装目录必须为 `Interface/AddOns/FFXIV_UI`。生成方法、完整映射、已知限制、许可状态和游戏验收清单见 [字体说明](docs/fonts/README.md)。添加新字体后请完全重启游戏。
 

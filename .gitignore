@@ -5,6 +5,3 @@ Media/Fonts/AxisRegular-CJKReuse.ttf
 __pycache__/
 .venv-fonts/
 docs/fonts/axis-preview.png
-
-Media/Fonts/AxisRegular-CJKDrawn.ttf
-docs/fonts/axis-drawn-preview-*.png
