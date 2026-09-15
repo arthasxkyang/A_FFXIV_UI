@@ -54,7 +54,7 @@ addon:SetScript("OnEvent", function()
     texture2:SetDrawLayer("BACKGROUND", 0)
 
     local coordsText = frame:CreateFontString(nil, "OVERLAY")
-    coordsText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", 14 )
+    coordsText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", 14 )
     coordsText:SetPoint("BOTTOM", frame, "BOTTOM", 0, -6)
     coordsText:SetTextColor(1, 1, 1)
 
@@ -65,25 +65,25 @@ coordsFrame:SetPoint("BOTTOM", frame, "BOTTOM", 0, -8)
 
 
 local xInt = coordsFrame:CreateFontString(nil, "OVERLAY")
-xInt:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", 12)
+xInt:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", 12)
 xInt:SetTextColor(221/255, 216/255, 202/255)
 xInt:SetPoint("LEFT", coordsFrame, "LEFT", 15, 0)
 
 
 local xDec = coordsFrame:CreateFontString(nil, "OVERLAY")
-xDec:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", 10)
+xDec:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", 10)
 xDec:SetTextColor(221/255, 216/255, 202/255)
 xDec:SetPoint("LEFT", xInt, "RIGHT", 0, 0)
 
 
 local yInt = coordsFrame:CreateFontString(nil, "OVERLAY")
-yInt:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", 12)
+yInt:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", 12)
 yInt:SetTextColor(221/255, 216/255, 202/255)
 yInt:SetPoint("LEFT", xDec, "RIGHT", 8, 0)  
 
 
 local yDec = coordsFrame:CreateFontString(nil, "OVERLAY")
-yDec:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", 10)
+yDec:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", 10)
 yDec:SetTextColor(221/255, 216/255, 202/255)
 yDec:SetPoint("LEFT", yInt, "RIGHT", 0, 0)
 
