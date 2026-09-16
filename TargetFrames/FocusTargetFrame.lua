@@ -61,7 +61,7 @@ outline:SetVertexColor(unpack(COLORS.neutral))
 
 
 local nameText = outlineFrame:CreateFontString(nil, "OVERLAY")
-nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisMedium.ttf", 15)
+nameText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-75-SemiBold.otf", 15)
 nameText:SetPoint("LEFT", outlineFrame, "LEFT", 220, 16)
 nameText:SetJustifyH("LEFT")
 nameText:SetDrawLayer("OVERLAY", 7)

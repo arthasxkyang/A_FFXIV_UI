@@ -1,0 +1,22 @@
+{
+  "lua_files_passed": 30,
+  "new_font_references": 20,
+  "gb2312_total": 6763,
+  "fonts": [
+    {
+      "file": "AlibabaPuHuiTi-3-65-Medium.otf",
+      "weight": 500,
+      "version": "Version 3.01",
+      "gb2312_covered": 6763,
+      "sha256": "00cd19ccd391bba61515361eea87163ba079c4bf691fa63c59e280fda690ada4"
+    },
+    {
+      "file": "AlibabaPuHuiTi-3-75-SemiBold.otf",
+      "weight": 600,
+      "version": "Version 3.01",
+      "gb2312_covered": 6763,
+      "sha256": "fd789c70fa4f1a265fe11a64d29bb48926aef7e14da338cb5ca5e6c359ae7e72"
+    }
+  ],
+  "wow_client": "not tested"
+}

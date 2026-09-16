@@ -59,7 +59,7 @@ if Masque then
 end
 
 local spellText = outlineFrame:CreateFontString(nil, "OVERLAY")
-spellText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AxisRegular.ttf", s(18))
+spellText:SetFont("Interface\\AddOns\\FFXIV_UI\\Media\\Fonts\\AlibabaPuHuiTi-3-65-Medium.otf", s(18))
 spellText:SetPoint("LEFT", outlineFrame, "LEFT", s(3), s(15))
 spellText:SetJustifyH("RIGHT")
 spellText:SetDrawLayer("OVERLAY", 7)
